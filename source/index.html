@@ -3,27 +3,249 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUPERGYM</title>
+    <title>Фитнес центр SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss" />
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" />
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
+    <section class="hero" data-test="hero">
+      <div class="hero__header header">
+        <img class="header__logo" src="img/images/logo-header.svg" width="100" height="20" alt="логотип Super Gym">
+        <a class="header__tel" href="8800555-55-55">8 800 555-55-55</a>
+      </div>
 
-    <div data-test="hero">hero-test-test</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
+      <div class="hero__info promo">
+        <p>Омск</p>
+        <h1>Фитнес центр</h1>
+        <ul class="promo__list">
+          <li class="promr__item"> <a href="#">Тренажерный зал</a></li>
+          <li class="promr__item"> <a href="#">Групповые занятия</a></li>
+          <li class="promr__item"> <a href="#">Кардио-зона</a></li>
+        </ul>
+        <a class="button promo__button" href="#">Купить абонимент</a>
+        <picture>
+          <img src="../source/img/images/hero-tablet@2x.jpg" alt="">
+        </picture>
+      </div>
+    </section>
+
+    <section class="about" data-test="about">
+      <h2 class="about__title"> Тренажернай зал</h2>
+      <p class="about__title-info">Просторный зал площадью 900 кв/м</p>
+      <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+      <picture>
+        <source media="(min-width: 1366px)" width="660" height="400" type="image/webp" srcset="img/images/about-desktop@1x.webp 1x, img/images/about-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" width="678" height="345" type="image/webp" srcset="img/images/about-tablet@1x.webp 1x, img/images/about-tablet@2x.webp 2x">
+        <source type="image/webp" width="320" height="280" srcset="img/images/about-mobile@1x.webr 1x, img/images/about-mobile@2x.webr 2x">
+        <source media="(min-width: 1366px)" width="660" height="400" type="image/png" srcset="img/images/about-desktop@1x.jpg 1x, img/images/about-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" width="678" height="345" type="image/png" srcset="img/images/about-tablet@1x.jpg 1x, img/images/about-tablet@2x.jpg 2x">
+        <img src="img/images/about-mobile@1x.jpg" srcset="img/images/about-mobile@2x.jpg 2x" width="320" height="280" alt="Изображение нашего тренажерного зала">
+      </picture>
+      <iframe></iframe>
+    </section>
+
+    <section class="price" data-test="price">
+      <h2 class="price__title">Абонименты</h2>
+      <ul class="price__sorting">
+        <li class="price__item">1 месяц</li>
+        <li class="price__item">6 месяцев</li>
+        <li class="price__item">12 месяцев</li>
+      </ul>
+      <ul class="price__cards-list">
+        <li class="price__cards-item">
+          <article class="price-card">
+            <h3 class="price-card__title">С тренером</h3>
+            <p class="price-card__info">12 занятий</p>
+            <span class="price-card__price">5000</span>
+            <button class="button price-card__button"> Купить абонимент</button>
+          </article>
+        </li>
+        <li class="price__cards-item">
+          <article class="price-card">
+            <h3 class="price-card__title">Дневной</h3>
+            <p class="price-card__info">С 8:00 до 17:00</p>
+            <span class="price-card__price">1700</span>
+            <button class="button price-card__button"> Купить абонимент</button>
+          </article>
+        </li>
+        <li class="price__cards-item">
+          <article class="price-card">
+            <h3 class="price-card__title">Полный день</h3>
+            <p class="price-card__info">С 8:00 до 22:00</p>
+            <span class="price-card__price">2700</span>
+            <button class="button price-card__button"> Купить абонимент</button>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="games" data-test="games">
+      <h2 class="games__title">Super Games</h2>
+      <div class="games__data">
+        <span>Дата</span>
+        <span>7</span>
+        <span>Марта 2019</span>
+      </div>
+      <div class="games__time">
+        <span>Время</span>
+        <span>12:00</span>
+      </div>
+      <p class="games__description">Ежегодные соревнования по CrossFit</p>
+      <a class="button games__button" href="#">Заполнить заявку</a>
+      <picture>
+        <img src="img/images/games-mobile@1x.jpg" width="290" height="290" alt="Изображение участника Super Games">
+      </picture>
+    </section>
+
+
+    <section class="juri" data-test="juri">
+      <h2 class="juri__title">Жюри</h2>
+      <ul class="juri__list">
+        <li class="juri__item">
+          <article class="juri-card">
+            <img class="juri-card__photo" src="img/images/juri-card-1@1x.jpg" srcset="img/images/juri-card-1@2x.jpg 2x" width="260" height="300" alt="Фотография Анны Павловой">
+      </picture>
+      <span class="juri-card__name">Анна Павлова</span>
+          </article>
+        </li>
+        <li class="juri__item">
+          <article class="juri-card">
+            <img class="juri-card__photo" src="img/images/juri-card-2@1x.jpg" srcset="img/images/juri-card-2@2x.jpg 2x" width="260" height="300" alt="Фотография Алексея Лаврова">
+      </picture>
+      <span class="juri-card__name">Алексей Лавров</span>
+          </article>
+        </li>
+        <li class="juri__item">
+          <article class="juri-card">
+            <img class="juri-card__photo" src="img/images/juri-card-3@1x.jpg" srcset="img/images/juri-card-3@2x.jpg 2x" width="260" height="300" alt="Фотография Александра Пашкова">
+      </picture>
+      <span class="juri-card__name">Александр Пашков</span>
+          </article>
+        </li>
+        <li class="juri__item">
+          <article class="juri-card">
+            <img class="juri-card__photo" src="img/images/juri-card-4@1x.jpg" srcset="img/images/juri-card-4@2x.jpg 2x" width="260" height="300" alt="Фотография Марии Кетовой">
+      </picture>
+      <span class="juri-card__name">Мария Кетова</span>
+          </article>
+        </li>
+      </ul>
+
+      <picture>
+
+    </section>
+
+
+    <section class="features" data-test="features">
+      <h2 class="features__title">Наши преимущества</h2>
+      <ul class="features__list">
+        <li class="features__item">
+          <article class="features-card">
+            <span>900</span>
+            <span>кв/м</span>
+            <h3 class="features-card__title">Площадь</h3>
+            <p class="features-card__descriptions">Занимайтесь без очередей и толкучки</p>
+          </article>
+        </li> 
+        <li class="features__item">
+          <article class="features-card">
+            <span>70</span>
+            <span>машин</span>
+            <h3 class="features-card__title">Собственная парковка</h3>
+            <p class="features-card__descriptions">Вы всегда найдёте место для своей машины на нашей парковке</p>
+          </article>
+        </li>  
+        <li class="features__item">
+          <article class="features-card">
+            <span>100</span>
+            <span>Тренажёров</span>
+            <p class="features-card__descriptions">Современные тренажёры на все группы мышц</p>
+          </article>
+        </li>  
+        <li class="features__item">
+          <article class="features-card">
+            <span>350</span>
+            <span>мест</span>
+            <h3 class="features-card__title">Комфорт</h3>
+            <p class="features-card__descriptions">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </article>
+        </li>  
+        <li class="features__item">
+          <article class="features-card">
+            <span>5+</span>
+            <span>лет</span>
+            <h3 class="features-card__title">Тренерский опыт</h3>
+            <p class="features-card__descriptions">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </article>
+        </li>  
+      </ul>
+    </section>
+
+
+    <section class="offers" data-test="offers">
+      <h2 class="offers__title">Акции</h2>
+      <div class="offers__hero">
+        <span>Год</span>
+        <span>4999</span>
+        <p>Безлимитный абонемент в тренажёрный зал</p>
+        <a href="#">Подробнее</a>
+        <picture>
+          <img src="img/images/offers-mobile@1x.jpg" srcset="img/images/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Изображение девушки в спортивной форме">
+        </picture>
+      </div>
+      <ul clas="offers__list">
+        <li class="offers__item">
+          <article class="offers-card">
+            <h3 class="offers-card__title">Месяц бесплатно</h3>
+            <p class="offers-card__description">Приведи друга, получи абонемент в подарок</p>
+            <a href="#">Подробнее</a>
+          </article>
+        </li>
+        <li class="offers__item">
+          <article class="offers-card">
+            <h3 class="offers-card__title">Скидка 20%</h3>
+            <p class="offers-card__description">Корпоративный фитнес с командой</p>
+            <a href="#">Подробнее</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="faq" data-test="faq">
+      <h2 class="faq__title">Вопросы и ответы</h2>
+      <ul class="faq__sorting-list">
+        <li class="faq__sorting-item">Центр</li>
+        <li class="faq__sorting-item">Абонимент</li>
+        <li class="faq__sorting-item">Услуги</li>
+        <li class="faq__sorting-item">Правила</li>
+      </ul>
+      <ul class="faq__list">
+        <li class="faq__item">
+          <h3 class="faq__item-title">Как стать членом фитнес-центра?</h3>
+          <p class="faq__item-description">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+        </li>
+      </ul>
+      </div>
+    </section>
+
+
+    <section class="reviews" data-test="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <article class="reviews-card">
+            <picture>
+              <img src="img/images/reviews-1@1x.jpeg" srcset="img/images/reviews-1@2x.jpeg 2x" width="150" height="150" alt="Фотография пользователя, написавшего отзыв">
+            </picture>
+            <h3 class="reviews-card__name">Анна Орлова</h3>
+              <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
