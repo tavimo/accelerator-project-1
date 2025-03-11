@@ -1,0 +1,49 @@
+.about__container {
+    padding-bottom: 40px;
+}
+
+.about__wrapper {
+    padding: 40px 15px 0 15px;
+}
+
+.about__title {
+    margin: 0;
+    padding: 0;
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: $color-text-basic;
+    margin-bottom: 12px;
+}
+
+.about__title-info {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: $color-text-basic;
+    margin-bottom: 36px;
+}
+
+.about__description {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0%;
+    color: $color-text-basic;
+    margin-bottom: 36px;
+}
+
+.about__img {
+    display: block;
+    margin-bottom: 36px;
+}
+
+.about__iframe {
+    width: 320px;
+    height: 170px;
+    background-color: green;
+}

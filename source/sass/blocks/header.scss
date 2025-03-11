@@ -7,9 +7,11 @@
 
 .header__tel {
     text-decoration: none;
+    font-family: $basic-font;
     color: $color-text-light;
     font-weight: 700;
     font-size: 22px;
     line-height: 22px;
     vertical-align: bottom;
+    letter-spacing: 0%;
 }

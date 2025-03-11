@@ -1,7 +1,9 @@
 .promo {
     padding: 48px 15px 32px;
     display: grid;
-    grid-template-columns: 156px 156px;
+    grid-template-columns: 113px 156px;
+    column-gap: 21px;
+
 }
 
 .promo__img {
@@ -14,8 +16,9 @@
     font-size: 32px;
     line-height: 32px;
     color: $color-text-light;
-    text-transform: uppercase;
     margin-bottom: 14px;
+    letter-spacing: 0;
+    text-align: end;
 }
 
 .promo__title {
@@ -28,6 +31,7 @@
     letter-spacing: 1px;
     color: $color-text-light;
     text-transform: uppercase;
+    text-align: end;
 }
 
 .promo__list {
@@ -38,6 +42,11 @@
     line-height: 20px;
     color: $color-text-light;
     grid-row: 1/3;
+    letter-spacing: 0;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .promo__item a {
@@ -46,6 +55,8 @@
 }
 
 .promo__button {
-    margin-top: 48px;
+    margin-top: 46px;
     grid-column: 1/3;
+    color: $color-text-light;
+    border: 2px solid $color-text-light;
 }

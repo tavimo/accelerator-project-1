@@ -1,0 +1,22 @@
+.juri-card {
+    font-display: flex;
+    flex-direction: column;
+}
+
+.juri-card__photo {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.juri-card__name {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: blue;
+    bottom: 46px;
+    z-index: 3;
+}

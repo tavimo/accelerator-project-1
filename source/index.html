@@ -16,6 +16,7 @@
   </head>
 
   <body class="page__body">
+
     <section class="hero" data-test="hero">
       <div class="container hero__container">
           <div class="hero__header header">
@@ -41,108 +42,121 @@
     </section>
 
     <section class="about" data-test="about">
-      <h2 class="about__title"> Тренажернай зал</h2>
-      <p class="about__title-info">Просторный зал площадью 900 кв/м</p>
-      <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
-      <picture>
-        <source media="(min-width: 1366px)" width="660" height="400" type="image/webp" srcset="img/images/about-desktop@1x.webp 1x, img/images/about-desktop@2x.webp 2x">
-        <source media="(min-width: 768px)" width="678" height="345" type="image/webp" srcset="img/images/about-tablet@1x.webp 1x, img/images/about-tablet@2x.webp 2x">
-        <source type="image/webp" width="320" height="280" srcset="img/images/about-mobile@1x.webr 1x, img/images/about-mobile@2x.webr 2x">
-        <source media="(min-width: 1366px)" width="660" height="400" type="image/png" srcset="img/images/about-desktop@1x.jpg 1x, img/images/about-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" width="678" height="345" type="image/png" srcset="img/images/about-tablet@1x.jpg 1x, img/images/about-tablet@2x.jpg 2x">
-        <img src="img/images/about-mobile@1x.jpg" srcset="img/images/about-mobile@2x.jpg 2x" width="320" height="280" alt="Изображение нашего тренажерного зала">
-      </picture>
-      <iframe></iframe>
+      <div class="container about__container">
+        <div class="about__wrapper">
+          <h2 class="about__title"> Тренажёрный зал</h2>
+          <p class="about__title-info">Просторный зал площадью 900 кв/м</p>
+          <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        </div>
+        <picture>
+          <source media="(min-width: 1366px)" width="660" height="400" type="image/webp" srcset="img/images/about-desktop@1x.webp 1x, img/images/about-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="678" height="345" type="image/webp" srcset="img/images/about-tablet@1x.webp 1x, img/images/about-tablet@2x.webp 2x">
+          <source type="image/webp" width="320" height="280" srcset="img/images/about-mobile@1x.webp 1x, img/images/about-mobile@2x.webp 2x">
+          <source media="(min-width: 1366px)" width="660" height="400" type="image/png" srcset="img/images/about-desktop@1x.jpg 1x, img/images/about-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="678" height="345" type="image/png" srcset="img/images/about-tablet@1x.jpg 1x, img/images/about-tablet@2x.jpg 2x">
+          <img class="about__img" src="img/images/about-mobile@1x.jpg" srcset="img/images/about-mobile@2x.jpg 2x" width="320" height="280" alt="Изображение нашего тренажерного зала">
+        </picture>
+        <div class="about__iframe"></div>
+      </div>
     </section>
 
     <section class="price" data-test="price">
-      <h2 class="price__title">Абонименты</h2>
-      <ul class="price__sorting">
-        <li class="price__item">1 месяц</li>
-        <li class="price__item">6 месяцев</li>
-        <li class="price__item">12 месяцев</li>
-      </ul>
-      <ul class="price__cards-list">
-        <li class="price__cards-item">
-          <article class="price-card">
-            <h3 class="price-card__title">С тренером</h3>
-            <p class="price-card__info">12 занятий</p>
-            <span class="price-card__price">5000</span>
-            <button class="button price-card__button"> Купить абонимент</button>
-          </article>
-        </li>
-        <li class="price__cards-item">
-          <article class="price-card">
-            <h3 class="price-card__title">Дневной</h3>
-            <p class="price-card__info">С 8:00 до 17:00</p>
-            <span class="price-card__price">1700</span>
-            <button class="button price-card__button"> Купить абонимент</button>
-          </article>
-        </li>
-        <li class="price__cards-item">
-          <article class="price-card">
-            <h3 class="price-card__title">Полный день</h3>
-            <p class="price-card__info">С 8:00 до 22:00</p>
-            <span class="price-card__price">2700</span>
-            <button class="button price-card__button"> Купить абонимент</button>
-          </article>
-        </li>
-      </ul>
+      <div class="container price__container">
+        <h2 class="price__title">Абонементы</h2>
+        <ul class="price__sorting">
+          <li class="price__item">1 месяц</li>
+          <li class="price__item">6 месяцев</li>
+          <li class="price__item">12 месяцев</li>
+        </ul>
+        <ul class="price__cards-list">
+          <li class="price__cards-item">
+            <article class="price-card">
+              <h3 class="price-card__title">С тренером</h3>
+              <p class="price-card__info">12 занятий</p>
+              <span class="price-card__price">5000</span>
+              <button class="button price-card__button"> Купить абонемент</button>
+            </article>
+          </li>
+          <li class="price__cards-item">
+            <article class="price-card">
+              <h3 class="price-card__title">Дневной</h3>
+              <p class="price-card__info">С 8:00 до 17:00</p>
+              <span class="price-card__price">1700</span>
+              <button class="button price-card__button"> Купить абонемент</button>
+            </article>
+          </li>
+          <li class="price__cards-item">
+            <article class="price-card">
+              <h3 class="price-card__title">Полный день</h3>
+              <p class="price-card__info">С 8:00 до 22:00</p>
+              <span class="price-card__price">2700</span>
+              <button class="button price-card__button"> Купить абонемент</button>
+            </article>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="games" data-test="games">
-      <h2 class="games__title">Super Games</h2>
-      <div class="games__data">
-        <span>Дата</span>
-        <span>7</span>
-        <span>Марта 2019</span>
+      <div class="container games__container">
+        <div class="games__info">
+          <h2 class="games__title">Super Games</h2>
+          <div class="games__data">
+            <span class="games__data-text">Дата</span>
+            <span class="games__data-number">7</span>
+            <span class="games__data-calendar">Марта 2019</span>
+          </div>
+          <div class="games__time">
+            <span class="games__time-text">Время</span>
+            <span class="games__data-number">12:00</span>
+          </div>
+          <p class="games__description">Ежегодные соревнования по CrossFit</p>
+          <a class="button games__button" href="#">Заполнить заявку</a>
+        </div>
+        <picture>
+          <img src="img/images/games-mobile@1x.jpg" width="290" height="290" alt="Изображение участника Super Games">
+        </picture>
       </div>
-      <div class="games__time">
-        <span>Время</span>
-        <span>12:00</span>
-      </div>
-      <p class="games__description">Ежегодные соревнования по CrossFit</p>
-      <a class="button games__button" href="#">Заполнить заявку</a>
-      <picture>
-        <img src="img/images/games-mobile@1x.jpg" width="290" height="290" alt="Изображение участника Super Games">
-      </picture>
     </section>
 
 
     <section class="juri" data-test="juri">
-      <h2 class="juri__title">Жюри</h2>
-      <ul class="juri__list">
-        <li class="juri__item">
-          <article class="juri-card">
-            <img class="juri-card__photo" src="img/images/juri-card-1@1x.jpg" srcset="img/images/juri-card-1@2x.jpg 2x" width="260" height="300" alt="Фотография Анны Павловой">
-      </picture>
-      <span class="juri-card__name">Анна Павлова</span>
-          </article>
-        </li>
-        <li class="juri__item">
-          <article class="juri-card">
-            <img class="juri-card__photo" src="img/images/juri-card-2@1x.jpg" srcset="img/images/juri-card-2@2x.jpg 2x" width="260" height="300" alt="Фотография Алексея Лаврова">
-      </picture>
-      <span class="juri-card__name">Алексей Лавров</span>
-          </article>
-        </li>
-        <li class="juri__item">
-          <article class="juri-card">
-            <img class="juri-card__photo" src="img/images/juri-card-3@1x.jpg" srcset="img/images/juri-card-3@2x.jpg 2x" width="260" height="300" alt="Фотография Александра Пашкова">
-      </picture>
-      <span class="juri-card__name">Александр Пашков</span>
-          </article>
-        </li>
-        <li class="juri__item">
-          <article class="juri-card">
-            <img class="juri-card__photo" src="img/images/juri-card-4@1x.jpg" srcset="img/images/juri-card-4@2x.jpg 2x" width="260" height="300" alt="Фотография Марии Кетовой">
-      </picture>
-      <span class="juri-card__name">Мария Кетова</span>
-          </article>
-        </li>
-      </ul>
+      <div class="container juri__container">
+        <h2 class="juri__title">Жюри</h2>
+        <ul class="juri__list">
+          <li class="juri__item">
+            <article class="juri-card">
+              <img class="juri-card__photo" src="img/images/juri-card-1@1x.jpg" srcset="img/images/juri-card-1@2x.jpg 2x" width="260" height="300" alt="Фотография Анны Павловой">
+        </picture>
+        <span class="juri-card__name">Анна Павлова</span>
+            </article>
+          </li>
+          <li class="juri__item">
+            <article class="juri-card">
+              <img class="juri-card__photo" src="img/images/juri-card-2@1x.jpg" srcset="img/images/juri-card-2@2x.jpg 2x" width="260" height="300" alt="Фотография Алексея Лаврова">
+        </picture>
+        <span class="juri-card__name">Алексей Лавров</span>
+            </article>
+          </li>
+          <li class="juri__item">
+            <article class="juri-card">
+              <img class="juri-card__photo" src="img/images/juri-card-3@1x.jpg" srcset="img/images/juri-card-3@2x.jpg 2x" width="260" height="300" alt="Фотография Александра Пашкова">
+        </picture>
+        <span class="juri-card__name">Александр Пашков</span>
+            </article>
+          </li>
+          <li class="juri__item">
+            <article class="juri-card">
+              <img class="juri-card__photo" src="img/images/juri-card-4@1x.jpg" srcset="img/images/juri-card-4@2x.jpg 2x" width="260" height="300" alt="Фотография Марии Кетовой">
+        </picture>
+        <span class="juri-card__name">Мария Кетова</span>
+            </article>
+          </li>
+        </ul>
+  
+        <picture>
+      </div>
 
-      <picture>
 
     </section>
 
@@ -227,7 +241,7 @@
       <h2 class="faq__title">Вопросы и ответы</h2>
       <ul class="faq__sorting-list">
         <li class="faq__sorting-item">Центр</li>
-        <li class="faq__sorting-item">Абонимент</li>
+        <li class="faq__sorting-item">Абонемент</li>
         <li class="faq__sorting-item">Услуги</li>
         <li class="faq__sorting-item">Правила</li>
       </ul>
