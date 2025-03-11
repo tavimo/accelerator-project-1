@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 15px 18px;
+}
+
+.header__tel {
+    text-decoration: none;
+    color: $color-text-light;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    vertical-align: bottom;
+}

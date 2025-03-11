@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Фитнес центр SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss" />
+    <link rel="preload" href="../source/fonts/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../source/fonts/alumni-sans-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../source/fonts/roboto-condensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../source/fonts/roboto-condensed-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../source/fonts/roboto-condensed-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+
   </head>
 
-  <body class="page-body">
+  <body class="page__body">
     <section class="hero" data-test="hero">
-      <div class="hero__header header">
-        <img class="header__logo" src="img/images/logo-header.svg" width="100" height="20" alt="логотип Super Gym">
-        <a class="header__tel" href="8800555-55-55">8 800 555-55-55</a>
-      </div>
+      <div class="container hero__container">
+          <div class="hero__header header">
+            <img class="header__logo" src="img/images/logo-header.svg" width="100" height="20" alt="логотип Super Gym">
+              <a class="header__tel" href="8800555-55-55">8 800 555-55-55</a>
+              </div>
+        
+          <div class="hero__info promo">
+            <span class="promo__location">Омск</span>
+            <h1 class="promo__title">Фитнес центр</h1>
+            <ul class="promo__list">
+              <li class="promo__item"> <a href="#">Тренажерный зал</a></li>
+              <li class="promo__item"> <a href="#">Групповые занятия</a></li>
+              <li class="promo__item"> <a href="#">Кардио-зона</a></li>
+            </ul>
+            <a class="button promo__button" href="#">Купить абонимент</a>
+            <picture>
+               <img class="promo__img" src="img/images/hero-tablet@1x.jpg" srcset="img/images/hero-tablet@2x.jpg 2x" width="324" height="390" alt="Фотография мужчины в футболке супермена">
+             </picture>
+          </div>
 
-      <div class="hero__info promo">
-        <p>Омск</p>
-        <h1>Фитнес центр</h1>
-        <ul class="promo__list">
-          <li class="promr__item"> <a href="#">Тренажерный зал</a></li>
-          <li class="promr__item"> <a href="#">Групповые занятия</a></li>
-          <li class="promr__item"> <a href="#">Кардио-зона</a></li>
-        </ul>
-        <a class="button promo__button" href="#">Купить абонимент</a>
-        <picture>
-          <img src="../source/img/images/hero-tablet@2x.jpg" alt="">
-        </picture>
       </div>
     </section>
 
