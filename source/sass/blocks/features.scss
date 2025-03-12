@@ -1,0 +1,34 @@
+.features {
+    background-color: $color-background-extra;
+}
+
+.features__container {
+    padding: 40px 15px;
+}
+
+.features__title {
+    margin: 0;
+    padding: 0;
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-text-basic;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.features__item {
+    margin: 0;
+    padding: 0;
+}

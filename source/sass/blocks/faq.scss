@@ -1,0 +1,133 @@
+.faq {
+    background-color: $color-background-extra;
+}
+
+.faq__container {
+    padding: 70px 15px;
+}
+
+.faq__title {
+    margin: 0;
+    padding: 0;
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-text-basic;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.faq__sorting-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.faq__sorting-item {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color-text-basic;
+    border: 1px solid #CACFDA;
+    padding: 14px;
+    text-align: center;
+
+    &--current {
+        color: $color-text-light;
+        border: none;
+        background-color: green;
+    }
+
+}
+
+.faq__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid $color-text-basic;
+}
+
+.faq__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__item {
+    padding: 20px 0;
+    border-top: 1px solid $color-text-basic;
+}
+
+.faq__item-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-text-basic;
+    width: 238px;
+}
+
+.faq__item-description {
+    display: none;
+}
+
+.faq__item-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid $color-text-basic;
+    background-color: transparent;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 14px;
+        height: 1px;
+        background-color: $color-text-basic;
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+    }
+
+    &::before {
+        content: "";
+        width: 14px;
+        height: 1px;
+        background-color: $color-text-basic;
+        position: absolute;
+        transform: translateX(50%) rotate(90deg);
+        right: 50%;
+    }
+}
+
+.faq__item--open p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text-basic;
+    margin-top: 20px;
+    width: 238px;
+}
+
+.faq__item--open .faq__item-button {
+    border: 1px solid $color-background-block-accent;
+    background-color: $color-background-block-accent;
+
+    &::after {
+        background-color: $color-text-light;
+    }
+
+    &::before {
+        display: none;
+    }
+}

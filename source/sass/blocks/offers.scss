@@ -1,0 +1,122 @@
+.offers__container {
+    padding: 40px 0 0 0;
+}
+
+.offers__title {
+    margin: 0;
+    padding: 0;
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: $color-text-basic;
+    margin-bottom: 40px;
+}
+
+.offers__hero {
+    background-color: $color-background-banner;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        background-color: $color-background-banner;
+        right: 288px;
+        top: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        background-color: $color-background-banner;
+        left: 288px;
+        top: 0;
+    }
+}
+
+.offers__hero {
+    padding: 0px;
+}
+
+.offers__hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.offers__hero-text {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-text-light;
+    margin-bottom: 9px;
+}
+
+.offers__hero-price {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: $color-text-light;
+    margin-bottom: 28px;
+}
+
+.offers__hero-description {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $color-text-light;
+    margin-bottom: 28px;
+}
+
+.offers__hero-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-text-light;
+    border-bottom: 1px solid $color-text-light;
+    padding-bottom: 5px;
+}
+
+.offers__img {
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+.offers__list {
+    margin: 0;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.offers__item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

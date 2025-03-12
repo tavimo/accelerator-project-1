@@ -114,7 +114,7 @@
           <a class="button games__button" href="#">Заполнить заявку</a>
         </div>
         <picture>
-          <img src="img/images/games-mobile@1x.jpg" width="290" height="290" alt="Изображение участника Super Games">
+          <img class="games__img" src="img/images/games-mobile@1x.jpg" width="290" height="290" alt="Изображение участника Super Games">
         </picture>
       </div>
     </section>
@@ -127,11 +127,10 @@
           <li class="juri__item">
             <article class="juri-card">
               <img class="juri-card__photo" src="img/images/juri-card-1@1x.jpg" srcset="img/images/juri-card-1@2x.jpg 2x" width="260" height="300" alt="Фотография Анны Павловой">
-        </picture>
-        <span class="juri-card__name">Анна Павлова</span>
+              <span class="juri-card__name">Анна Павлова</span>
             </article>
           </li>
-          <li class="juri__item">
+          <!-- <li class="juri__item">
             <article class="juri-card">
               <img class="juri-card__photo" src="img/images/juri-card-2@1x.jpg" srcset="img/images/juri-card-2@2x.jpg 2x" width="260" height="300" alt="Фотография Алексея Лаврова">
         </picture>
@@ -151,7 +150,7 @@
         </picture>
         <span class="juri-card__name">Мария Кетова</span>
             </article>
-          </li>
+          </li> -->
         </ul>
   
         <picture>
@@ -162,95 +161,128 @@
 
 
     <section class="features" data-test="features">
-      <h2 class="features__title">Наши преимущества</h2>
-      <ul class="features__list">
-        <li class="features__item">
-          <article class="features-card">
-            <span>900</span>
-            <span>кв/м</span>
-            <h3 class="features-card__title">Площадь</h3>
-            <p class="features-card__descriptions">Занимайтесь без очередей и толкучки</p>
-          </article>
-        </li> 
-        <li class="features__item">
-          <article class="features-card">
-            <span>70</span>
-            <span>машин</span>
-            <h3 class="features-card__title">Собственная парковка</h3>
-            <p class="features-card__descriptions">Вы всегда найдёте место для своей машины на нашей парковке</p>
-          </article>
-        </li>  
-        <li class="features__item">
-          <article class="features-card">
-            <span>100</span>
-            <span>Тренажёров</span>
-            <p class="features-card__descriptions">Современные тренажёры на все группы мышц</p>
-          </article>
-        </li>  
-        <li class="features__item">
-          <article class="features-card">
-            <span>350</span>
-            <span>мест</span>
-            <h3 class="features-card__title">Комфорт</h3>
-            <p class="features-card__descriptions">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-          </article>
-        </li>  
-        <li class="features__item">
-          <article class="features-card">
-            <span>5+</span>
-            <span>лет</span>
-            <h3 class="features-card__title">Тренерский опыт</h3>
-            <p class="features-card__descriptions">Добивайтесь своих целей быстрее с профессиональным тренером</p>
-          </article>
-        </li>  
-      </ul>
+      <div class="container features__container">
+        <h2 class="features__title">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <article class="features-card">
+              <span class="features-card__number">900</span>
+              <span class="features-card__info-text">кв/м</span>
+              <h3 class="features-card__title">Площадь</h3>
+              <p class="features-card__descriptions">Занимайтесь без очередей и толкучки</p>
+            </article>
+          </li> 
+          <li class="features__item">
+            <article class="features-card">
+              <span class="features-card__number">70</span>
+              <span class="features-card__info-text">машин</span>
+              <h3 class="features-card__title">Собственная парковка</h3>
+              <p class="features-card__descriptions">Вы всегда найдёте место для своей машины на нашей парковке</p>
+            </article>
+          </li>  
+          <li class="features__item">
+            <article class="features-card features-card--accent">
+              <h3 class="visually-hidden">Тренажеры</h3>
+              <span class="features-card__number">100</span>
+              <span class="features-card__info-text">Тренажёров</span>
+              <p class="features-card__descriptions">Современные тренажёры на все группы мышц</p>
+            </article>
+          </li>  
+          <li class="features__item">
+            <article class="features-card">
+              <span class="features-card__number">350</span>
+              <span class="features-card__info-text">мест</span>
+              <h3 class="features-card__title">Комфорт</h3>
+              <p class="features-card__descriptions">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </article>
+          </li>  
+          <li class="features__item">
+            <article class="features-card">
+              <span class="features-card__number">5+</span>
+              <span class="features-card__info-text">лет</span>
+              <h3 class="features-card__title">Тренерский опыт</h3>
+              <p class="features-card__descriptions">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </article>
+          </li>  
+        </ul>
+      </div>
     </section>
 
 
     <section class="offers" data-test="offers">
-      <h2 class="offers__title">Акции</h2>
-      <div class="offers__hero">
-        <span>Год</span>
-        <span>4999</span>
-        <p>Безлимитный абонемент в тренажёрный зал</p>
-        <a href="#">Подробнее</a>
-        <picture>
-          <img src="img/images/offers-mobile@1x.jpg" srcset="img/images/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Изображение девушки в спортивной форме">
-        </picture>
+      <div class="container offers__container">
+        <h2 class="offers__title">Акции</h2>
+        <div class="offers__hero">
+          <div class="offers__hero-wrapper">
+            <span class="offers__hero-text">Год</span>
+            <span class="offers__hero-price">4999</span>
+            <p class="offers__hero-description">Безлимитный абонемент в тренажёрный зал</p>
+            <a class="offers__hero-link" href="#">Подробнее</a>
+          </div>
+          <picture>
+            <img class="offers__img" src="img/images/offers-mobile@1x.jpg" srcset="img/images/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Изображение девушки в спортивной форме">
+          </picture>
+        </div>
+        <ul class="offers__list">
+          <li class="offers__item">
+            <article class="offers-card">
+              <h3 class="offers-card__title">Месяц бесплатно</h3>
+              <p class="offers-card__description">Приведи друга, получи абонемент в подарок</p>
+              <a class="offers-card__link" href="#">Подробнее</a>
+            </article>
+          </li>
+          <li class="offers__item">
+            <article class="offers-card">
+              <h3 class="offers-card__title">Скидка 20%</h3>
+              <p class="offers-card__description">Корпоративный фитнес с командой</p>
+              <a class="offers-card__link" href="#">Подробнее</a>
+            </article>
+          </li>
+        </ul>
       </div>
-      <ul clas="offers__list">
-        <li class="offers__item">
-          <article class="offers-card">
-            <h3 class="offers-card__title">Месяц бесплатно</h3>
-            <p class="offers-card__description">Приведи друга, получи абонемент в подарок</p>
-            <a href="#">Подробнее</a>
-          </article>
-        </li>
-        <li class="offers__item">
-          <article class="offers-card">
-            <h3 class="offers-card__title">Скидка 20%</h3>
-            <p class="offers-card__description">Корпоративный фитнес с командой</p>
-            <a href="#">Подробнее</a>
-          </article>
-        </li>
-      </ul>
+      
     </section>
 
 
     <section class="faq" data-test="faq">
-      <h2 class="faq__title">Вопросы и ответы</h2>
-      <ul class="faq__sorting-list">
-        <li class="faq__sorting-item">Центр</li>
-        <li class="faq__sorting-item">Абонемент</li>
-        <li class="faq__sorting-item">Услуги</li>
-        <li class="faq__sorting-item">Правила</li>
-      </ul>
-      <ul class="faq__list">
-        <li class="faq__item">
-          <h3 class="faq__item-title">Как стать членом фитнес-центра?</h3>
-          <p class="faq__item-description">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-        </li>
-      </ul>
+      <div class="container faq__container">
+        <h2 class="faq__title">Вопросы и ответы</h2>
+        <ul class="faq__sorting-list">
+          <li class="faq__sorting-item faq__sorting-item--current">Центр</li>
+          <li class="faq__sorting-item">Абонемент</li>
+          <li class="faq__sorting-item">Услуги</li>
+          <li class="faq__sorting-item">Правила</li>
+        </ul>
+        <ul class="faq__list">
+          <li class="faq__item faq__item--open">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Как стать членом фитнес-центра?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Где можно посмотреть расписание?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description">Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Есть кулеры в центре? Предоставляются полотенца?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Сколько тренеров работает в клубе и какова  их квалификация?</h3>
+                <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+        </ul>
       </div>
     </section>
 

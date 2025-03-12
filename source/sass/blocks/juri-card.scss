@@ -1,6 +1,7 @@
 .juri-card {
     font-display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .juri-card__photo {
@@ -11,12 +12,14 @@
 
 .juri-card__name {
     display: block;
-    position: relative;
+    position: absolute;
     font-weight: 400;
     font-size: 22px;
     line-height: 22px;
     text-align: center;
-    color: blue;
-    bottom: 46px;
+    color: green;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 3;
 }
