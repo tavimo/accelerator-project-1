@@ -1,0 +1,46 @@
+.contacts__container {
+    padding: 36px 15px;
+}
+
+.contacts__title {
+    margin: 0;
+    padding: 0;
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-text-basic;
+    margin-bottom: 38px;
+}
+
+.contacts__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.contacts__item-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-text-basic;
+    margin-bottom: 12px;
+}
+
+.contacts__item a {
+    text-decoration: none;
+}
+
+.contacts__item-info {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-text-basic;
+}

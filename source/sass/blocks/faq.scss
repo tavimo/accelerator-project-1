@@ -28,16 +28,19 @@
     margin-bottom: 35px;
 }
 
-.faq__sorting-item {
+.faq__button {
     margin: 0;
     padding: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: $color-text-basic;
+    text-transform: none;
     border: 1px solid #CACFDA;
+    background-color: transparent;
     padding: 14px;
     text-align: center;
+    width: 140px;
 
     &--current {
         color: $color-text-light;

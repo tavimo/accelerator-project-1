@@ -248,12 +248,12 @@
       <div class="container faq__container">
         <h2 class="faq__title">Вопросы и ответы</h2>
         <ul class="faq__sorting-list">
-          <li class="faq__sorting-item faq__sorting-item--current">Центр</li>
-          <li class="faq__sorting-item">Абонемент</li>
-          <li class="faq__sorting-item">Услуги</li>
-          <li class="faq__sorting-item">Правила</li>
+          <li class="faq__sorting-item faq__sorting-item--current"> <button class="button faq__button faq__button--current">Центр</button></li>
+          <li class="faq__sorting-item"><button class="button faq__button">Абонемент</button></li>
+          <li class="faq__sorting-item"><button class="button faq__button">Услуги</button></li>
+          <li class="faq__sorting-item"><button class="button faq__button">Правила</button></li>
         </ul>
-        <ul class="faq__list">
+        <ul class="faq__list" data-tab="центр">
           <li class="faq__item faq__item--open">
             <div class="faq__item-wrapper">
               <h3 class="faq__item-title">Как стать членом фитнес-центра?</h3>
@@ -277,7 +277,97 @@
           </li>
           <li class="faq__item">
             <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Сколько тренеров работает в клубе и какова  их квалификация?</h3>
+              <h3 class="faq__item-title">Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+        </ul>
+        <ul class="faq__list" data-tab="абонемент">
+          <li class="faq__item faq__item--open">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Занятия с тренером входят в абонемент?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Можно ли заморозить абонемент?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Что такое семейный доступ и доступ для друзей?</h3>
+                <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+        </ul>
+        <ul class="faq__list" data-tab="услуги">
+          <li class="faq__item faq__item--open">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Можно ли приобрести в центре спортивное питание?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Есть ли в центре детская комната?</h3>
+                <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+        </ul>
+        <ul class="faq__list" data-tab="правила">
+          <li class="faq__item faq__item--open">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Есть в фитнес-центре дресс-код?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Можно ли приводить с собой детей на тренировки?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Какие дополнительные правила посещения центра?</h3>
+              <button class="faq__item-button"></button>
+            </div>
+            <p class="faq__item-description"></p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-wrapper">
+              <h3 class="faq__item-title">Нужна ли медицинская справка для посещения залов и бассейна?</h3>
                 <button class="faq__item-button"></button>
             </div>
             <p class="faq__item-description"></p>
@@ -288,23 +378,111 @@
 
 
     <section class="reviews" data-test="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <article class="reviews-card">
-            <picture>
-              <img src="img/images/reviews-1@1x.jpeg" srcset="img/images/reviews-1@2x.jpeg 2x" width="150" height="150" alt="Фотография пользователя, написавшего отзыв">
-            </picture>
-            <h3 class="reviews-card__name">Анна Орлова</h3>
-              <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-          </article>
-        </li>
-      </ul>
+      <div class="container reviews__container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <article class="reviews-card">
+              <div class="reviews-card__wrapper-photo">
+                <picture>
+                  <img class="reviews-card__img" src="img/images/reviews-1@1x.jpeg" srcset="img/images/reviews-1@2x.jpeg 2x" alt="Фотография пользователя, написавшего отзыв">
+                </picture>
+              </div>
+              <h3 class="reviews-card__name">Анна Орлова</h3>
+                <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </article>
+          </li>
+        </ul>
+      </div>
     </section>
 
 
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <section class="form" data-test="form">
+      <div class="container form__container">
+        <h2 class="form__title">Бесплатное занятие</h2>
+        <form
+              class="form__data"
+              action="https://echo.htmlacademy.ru/"
+              method="post">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input
+                class="form__input"
+                type="name"
+                name="name"
+                id="name"
+                placeholder="Имя"
+              />
+              <label class="visually-hidden" for="tel">Телефон</label>
+              <input
+              class="form__input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Телефон"
+              />
+              <button class="button form__button" type="button">
+                Отправить
+              </button>
+            </form>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container contacts__container">
+        <h2 class="contacts__title">Контакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Адрес:</h3>
+            <p class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">График работы:</h3>
+            <p class="contacts__item-info">Пн-Вс: с 8:00 до 22:00</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Телефон:</h3>
+            <a class="contacts__item-info" href="8800555-55-55">8 800 555-55-55</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Email:</h3>
+            <a class="contacts__item-info" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <div class="footer" data-test="footer">
+      <div class="container footer__container">
+        <img class="footer__logo" src="img/images/logo-header.svg" width="100" height="20" alt="логотип Super Gym">
+        <ul class="footer__list-nav">
+          <li class="footer__item"><a href="#">Услуги</a></li>
+          <li class="footer__item"><a href="#">Абонементы</a></li>
+          <li class="footer__item"><a href="#">Акции</a></li>
+          <li class="footer__item"><a href="#">Тренеры</a></li>
+          <li class="footer__item"><a href="#">Расписание</a></li>
+        </ul>
+        <ul class="footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vk" href="#" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Мы во Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--ok" href="#" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Мы в Одноклассниках.</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--reddit" href="#" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Мы на Реддит.</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
