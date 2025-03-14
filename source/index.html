@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Фитнес центр SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss" />
-    <link rel="preload" href="../source/fonts/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="../source/fonts/alumni-sans-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="../source/fonts/roboto-condensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="../source/fonts/roboto-condensed-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="../source/fonts/roboto-condensed-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-
-
-
+    <link rel="preload" href="../../fonts/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../../fonts/alumni-sans-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../../fonts/roboto-condensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../../fonts/roboto-condensed-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../../fonts/roboto-condensed-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon-32x32.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+    <script type="module" src="js/main.js"></script>
   </head>
 
   <body class="page__body">
@@ -23,7 +24,7 @@
             <img class="header__logo" src="img/images/logo-header.svg" width="100" height="20" alt="логотип Super Gym">
               <a class="header__tel" href="8800555-55-55">8 800 555-55-55</a>
               </div>
-        
+
           <div class="hero__info promo">
             <span class="promo__location">Омск</span>
             <h1 class="promo__title">Фитнес центр</h1>
@@ -34,8 +35,11 @@
             </ul>
             <a class="button promo__button" href="#">Купить абонимент</a>
             <picture>
-               <img class="promo__img" src="img/images/hero-tablet@1x.jpg" srcset="img/images/hero-tablet@2x.jpg 2x" width="324" height="390" alt="Фотография мужчины в футболке супермена">
-             </picture>
+              <source media="(min-width: 1366px)" width="500" height="524" type="image/webp" srcset="img/images/hero-desktop@1x.webp 1x, img/images/hero-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="324" height="390" type="image/webp" srcset="img/images/hero-tablet@1x.webp 1x, img/images/hero-tablet@2x.webp 2x">
+              <source media="(min-width: 1366px)" width="500" height="524" type="image/png" srcset="img/images/hero-desktop@1x.jpg 1x, img/images/hero-desktop@2x.jpg 2x">
+              <img class="promo__img" media="(min-width: 768px)" src="img/images/hero-tablet@1x.jpg" srcset="img/images/hero-tablet@2x.jpg 2x" width="324" height="390" alt="Изображение нашего тренажерного зала">
+            </picture>
           </div>
 
       </div>
@@ -73,7 +77,10 @@
             <article class="price-card">
               <h3 class="price-card__title">С тренером</h3>
               <p class="price-card__info">12 занятий</p>
-              <span class="price-card__price">5000</span>
+              <div class="price-card__price-wrapper">
+                <span class="price-card__price-shadow" aria-hidden="true">5000</span>
+                <span class="price-card__price">5000</span>
+              </div>
               <button class="button price-card__button"> Купить абонемент</button>
             </article>
           </li>
@@ -81,7 +88,10 @@
             <article class="price-card">
               <h3 class="price-card__title">Дневной</h3>
               <p class="price-card__info">С 8:00 до 17:00</p>
-              <span class="price-card__price">1700</span>
+              <div class="price-card__price-wrapper">
+                <span class="price-card__price-shadow" aria-hidden="true">1700</span>
+                <span class="price-card__price">1700</span>
+              </div>
               <button class="button price-card__button"> Купить абонемент</button>
             </article>
           </li>
@@ -89,7 +99,10 @@
             <article class="price-card">
               <h3 class="price-card__title">Полный день</h3>
               <p class="price-card__info">С 8:00 до 22:00</p>
-              <span class="price-card__price">2700</span>
+              <div class="price-card__price-wrapper">
+                <span class="price-card__price-shadow" aria-hidden="true">2700</span>
+                <span class="price-card__price">2700</span>
+              </div>
               <button class="button price-card__button"> Купить абонемент</button>
             </article>
           </li>
@@ -114,7 +127,12 @@
           <a class="button games__button" href="#">Заполнить заявку</a>
         </div>
         <picture>
-          <img class="games__img" src="img/images/games-mobile@1x.jpg" width="290" height="290" alt="Изображение участника Super Games">
+          <source media="(min-width: 1366px)" width="660" height="500" type="image/webp" srcset="img/images/games-desktop@1x.webp 1x, img/images/games-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="378" height="348" type="image/webp" srcset="img/images/games-tablet@1x.webp 1x, img/images/games-tablet@2x.webp 2x">
+          <source type="image/webp" width="290" height="290" srcset="img/images/games-mobile@1x.webp 1x, img/images/games-mobile@2x.webp 2x">
+          <source media="(min-width: 1366px)" width="660" height="500" type="image/png" srcset="img/images/games-desktop@1x.jpg 1x, img/images/games-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="378" height="348" type="image/png" srcset="img/images/games-tablet@1x.jpg 1x, img/images/games-tablet@2x.jpg 2x">
+          <img class="games__img" src="img/images/games-mobile@1x.jpg" srcset="img/images/games-mobile@2x.jpg 2x" width="290" height="290" alt="Изображение участника Super Games">
         </picture>
       </div>
     </section>
@@ -126,33 +144,42 @@
         <ul class="juri__list">
           <li class="juri__item">
             <article class="juri-card">
-              <img class="juri-card__photo" src="img/images/juri-card-1@1x.jpg" srcset="img/images/juri-card-1@2x.jpg 2x" width="260" height="300" alt="Фотография Анны Павловой">
+              <picture>
+                <source type="image/webp" width="260" height="300" srcset="img/images/juri-card-1@1x.webp 1x, img/images/juri-card-1@2x.webp 2x">
+                <img class="juri-card__photo" src="img/images/juri-card-1@1x.jpg" srcset="img/images/juri-card-1@2x.jpg 2x" width="290" height="290" alt="Фотография Анны Павловой">
+              </picture>
               <span class="juri-card__name">Анна Павлова</span>
-            </article>
-          </li>
-          <!-- <li class="juri__item">
-            <article class="juri-card">
-              <img class="juri-card__photo" src="img/images/juri-card-2@1x.jpg" srcset="img/images/juri-card-2@2x.jpg 2x" width="260" height="300" alt="Фотография Алексея Лаврова">
-        </picture>
-        <span class="juri-card__name">Алексей Лавров</span>
             </article>
           </li>
           <li class="juri__item">
             <article class="juri-card">
-              <img class="juri-card__photo" src="img/images/juri-card-3@1x.jpg" srcset="img/images/juri-card-3@2x.jpg 2x" width="260" height="300" alt="Фотография Александра Пашкова">
-        </picture>
+              <picture>
+                <source type="image/webp" width="260" height="300" srcset="img/images/juri-card-2@1x.webp 1x, img/images/juri-card-2@2x.webp 2x">
+                <img class="juri-card__photo" src="img/images/juri-card-2@1x.jpg" srcset="img/images/juri-card-2@2x.jpg 2x" width="290" height="290" alt="Фотография Алексея Лаврова">
+              </picture>
+        <span class="juri-card__name">Алексей Лавров</span>
+            </article>
+          <!-- </li>
+          <li class="juri__item">
+            <article class="juri-card">
+              <picture>
+                <source type="image/webp" width="260" height="300" srcset="img/images/juri-card-3@1x.webp 1x, img/images/juri-card-3@2x.webp 2x">
+                <img class="juri-card__photo" src="img/images/juri-card-3@1x.jpg" srcset="img/images/juri-card-3@2x.jpg 2x" width="290" height="290" alt="Фотография Александра Пашкова">
+              </picture>
         <span class="juri-card__name">Александр Пашков</span>
             </article>
           </li>
           <li class="juri__item">
             <article class="juri-card">
-              <img class="juri-card__photo" src="img/images/juri-card-4@1x.jpg" srcset="img/images/juri-card-4@2x.jpg 2x" width="260" height="300" alt="Фотография Марии Кетовой">
-        </picture>
+             <picture>
+                <source type="image/webp" width="260" height="300" srcset="img/images/juri-card-4@1x.webp 1x, img/images/juri-card-4@2x.webp 2x">
+                <img class="juri-card__photo" src="img/images/juri-card-4@1x.jpg" srcset="img/images/juri-card-4@2x.jpg 2x" width="290" height="290" alt="Фотография Марии Кетовой">
+              </picture>
         <span class="juri-card__name">Мария Кетова</span>
             </article>
           </li> -->
         </ul>
-  
+
         <picture>
       </div>
 
@@ -171,7 +198,7 @@
               <h3 class="features-card__title">Площадь</h3>
               <p class="features-card__descriptions">Занимайтесь без очередей и толкучки</p>
             </article>
-          </li> 
+          </li>
           <li class="features__item">
             <article class="features-card">
               <span class="features-card__number">70</span>
@@ -179,15 +206,15 @@
               <h3 class="features-card__title">Собственная парковка</h3>
               <p class="features-card__descriptions">Вы всегда найдёте место для своей машины на нашей парковке</p>
             </article>
-          </li>  
-          <li class="features__item">
+          </li>
+          <li class="features__item features__item--accent">
             <article class="features-card features-card--accent">
               <h3 class="visually-hidden">Тренажеры</h3>
               <span class="features-card__number">100</span>
               <span class="features-card__info-text">Тренажёров</span>
               <p class="features-card__descriptions">Современные тренажёры на все группы мышц</p>
             </article>
-          </li>  
+          </li>
           <li class="features__item">
             <article class="features-card">
               <span class="features-card__number">350</span>
@@ -195,7 +222,7 @@
               <h3 class="features-card__title">Комфорт</h3>
               <p class="features-card__descriptions">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </article>
-          </li>  
+          </li>
           <li class="features__item">
             <article class="features-card">
               <span class="features-card__number">5+</span>
@@ -203,7 +230,7 @@
               <h3 class="features-card__title">Тренерский опыт</h3>
               <p class="features-card__descriptions">Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </article>
-          </li>  
+          </li>
         </ul>
       </div>
     </section>
@@ -220,6 +247,11 @@
             <a class="offers__hero-link" href="#">Подробнее</a>
           </div>
           <picture>
+            <source media="(min-width: 1366px)" width="280" height="460" type="image/webp" srcset="img/images/offers-desktop@1x.webp 1x, img/images/offers-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="400" height="462" type="image/webp" srcset="img/images/offers-tablet@1x.webp 1x, img/images/offers-tablet@2x.webp 2x">
+            <source type="image/webp" width="320" height="360" srcset="img/images/offers-mobile@1x.webp 1x, img/images/offers-mobile@2x.webp 2x">
+            <source media="(min-width: 1366px)" width="280" height="460" type="image/png" srcset="img/images/offers-desktop@1x.jpg 1x, img/images/offers-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="400" height="462" type="image/png" srcset="img/images/offers-tablet@1x.jpg 1x, img/images/offers-tablet@2x.jpg 2x">
             <img class="offers__img" src="img/images/offers-mobile@1x.jpg" srcset="img/images/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Изображение девушки в спортивной форме">
           </picture>
         </div>
@@ -240,7 +272,7 @@
           </li>
         </ul>
       </div>
-      
+
     </section>
 
 
@@ -385,7 +417,8 @@
             <article class="reviews-card">
               <div class="reviews-card__wrapper-photo">
                 <picture>
-                  <img class="reviews-card__img" src="img/images/reviews-1@1x.jpeg" srcset="img/images/reviews-1@2x.jpeg 2x" alt="Фотография пользователя, написавшего отзыв">
+                  <source type="image/webp" width="80" height="80" srcset="img/images/reviews-1@1x.webp 1x, img/images/reviews-1@2x.webp 2x">
+                  <img class="reviews-card__img" src="img/images/reviews-1@1x.jpg" srcset="img/images/reviews-1@2x.jpg 2x" width="80" height="80" alt="Фотография пользователя, написавшего отзыв">
                 </picture>
               </div>
               <h3 class="reviews-card__name">Анна Орлова</h3>
@@ -481,8 +514,5 @@
           </ul>
       </div>
     </div>
-
-
-    <script type="module" src="js/main.js"></script>
   </body>
 </html>

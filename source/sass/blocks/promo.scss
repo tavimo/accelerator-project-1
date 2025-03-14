@@ -4,10 +4,30 @@
     grid-template-columns: 113px 156px;
     column-gap: 21px;
 
+    @media (min-width: 768px) {
+        grid-template-columns: 113px 185px 156px;
+        grid-template-rows: min-content min-content min-content;
+        padding: 0 45px 100px 45px;
+        column-gap: 26px;
+      }
+
 }
+
+picture {
+    @media (min-width: 768px) {
+        grid-row: 1/5;
+        grid-column: 3/4;
+      }
+  }
 
 .promo__img {
     display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        margin-left: 4px;
+      }
+    
 }
 
 .promo__location {
@@ -19,6 +39,13 @@
     margin-bottom: 14px;
     letter-spacing: 0;
     text-align: end;
+
+    @media (min-width: 768px) {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 10px;
+        padding-top: 31px;
+      }
 }
 
 .promo__title {
@@ -32,6 +59,14 @@
     color: $color-text-light;
     text-transform: uppercase;
     text-align: end;
+
+    @media (min-width: 768px) {
+        display: block;
+        grid-column: 2/3;
+        font-size: 72px;
+        line-height: 85px;
+        letter-spacing: 2px;
+      }
 }
 
 .promo__list {
@@ -47,6 +82,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    @media (min-width: 768px) {
+    grid-row: 1/4;
+    line-height: 22px;
+    margin: auto;
+    padding-top: 31px;
+      }
 }
 
 .promo__item a {
@@ -59,4 +101,10 @@
     grid-column: 1/3;
     color: $color-text-light;
     border: 2px solid $color-text-light;
+
+    @media (min-width: 768px) {
+        grid-column: 2/3;
+        margin-top: 50px;
+        padding: 20px;
+      }
 }

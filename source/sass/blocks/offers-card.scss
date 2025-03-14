@@ -1,7 +1,8 @@
 .offers-card {
     margin: 0;
     padding: 20px;
-    border: 7px solid green;
+    border: 7px solid transparent;
+    border-image: linear-gradient(128deg, #D10A42 0%, #00359F 100%) 1;
     width: 290px;
     display: flex;
     flex-direction: column;

@@ -17,9 +17,10 @@
     font-size: 22px;
     line-height: 22px;
     text-align: center;
-    color: green;
+    color: $color-background-light;
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
+    width: 100%;
 }

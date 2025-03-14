@@ -41,11 +41,12 @@
     padding: 14px;
     text-align: center;
     width: 140px;
+    min-height: 46px;
 
     &--current {
         color: $color-text-light;
         border: none;
-        background-color: green;
+        background: linear-gradient(128deg, #ED0233 0%, #003EB7 100%);
     }
 
 }
