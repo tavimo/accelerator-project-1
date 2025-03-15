@@ -1,119 +1,138 @@
-
-
 .price-card {
-    padding: 50px 42px;
-    display: flex;
-    flex-direction: column;
-    background-color: $color-background-light;
-    align-items: center;
+  padding: 50px 42px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-background-light;
+  align-items: center;
 
-    @media (min-width: 768px) {
-      padding: 65px;
-      width: 380px;
-    }
+  @media (min-width: 768px) {
+    padding: 65px;
+    width: 380px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 360px;
+  }
 }
 
 .price-card__title {
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 22px;
-    letter-spacing: 0%;
-    color: $color-text-basic;
-    text-align: center;
-    margin-bottom: 18px;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: $color-text-basic;
+  text-align: center;
+  margin-bottom: 18px;
 
-    @media (min-width: 768px) {
-      font-size: 24px;
-      line-height: 24px;
-      margin-bottom: 22px;
-    }
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+  @media (min-width: 1366px) {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 17px;
+  }
 }
 
 .price-card__info {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: $color-text-basic;
-    margin-bottom: 66px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: $color-text-basic;
+  margin-bottom: 66px;
 
-    @media (min-width: 768px) {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 82px;
-    }
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 77px;
+  }
 }
 
-.price-card__price-wrapper{
-    position: relative;
-    margin-bottom: 18px;
+.price-card__price-wrapper {
+  position: relative;
+  margin-bottom: 18px;
 
-    @media (min-width: 768px) {
-      margin-bottom: 22px;
-    }
+  @media (min-width: 768px) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: 1366px) {
+    margin-bottom: 17px;
+  }
 }
 
 .price-card__price-shadow {
-    position: absolute;
-    font-size: 80px;
-    font-weight: 700;
-    color: #E8E8E8;
-    z-index: 1;
-    top: 0;
-    right: 50%;
-    transform: translateX(50%);
+  position: absolute;
+  font-size: 80px;
+  font-weight: 700;
+  color: #e8e8e8;
+  z-index: 1;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
 
-    @media (min-width: 768px) {
-      font-size: 100px;
-      top: 4px;
-    }
+  @media (min-width: 768px) {
+    font-size: 100px;
+    top: 4px;
+  }
 }
 
 .price-card__price {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 150%;
-    color: $color-text-accent;
-    text-align: center;
-    position: relative;
-    left: -17px;
-    z-index: 2;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  color: $color-text-accent;
+  text-align: center;
+  position: relative;
+  left: -17px;
+  z-index: 2;
 
-    &::after {
-        content: "";
-        width: 24px;
-        height: 32px;
-        background-image: url(../../img/icons/price-rub.svg);
-        background-repeat: no-repeat;
-        position: absolute;
-        margin-left: 10px;
-        transform: translateY(-50%);
-        top: 50%;
-
-        @media (min-width: 768px) {
-          width: 30px;
-          height: 42px;
-          margin-left: 14px;
-        }
-
-    }
+  &::after {
+    content: "";
+    width: 24px;
+    height: 32px;
+    background-image: url(../../img/icons/price-rub.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 10px;
+    transform: translateY(-50%);
+    top: 50%;
 
     @media (min-width: 768px) {
-      font-size: 60px;
-      line-height: 150%;
-      margin-bottom: 22px;
-      margin-left: -10px;
+      width: 30px;
+      height: 42px;
+      margin-left: 14px;
     }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 150%;
+    margin-bottom: 22px;
+    margin-left: -10px;
+  }
 }
 
-
 .price-card__button {
-    background-color: $color-background-light;
-    padding: 25px;
-    min-width: 206px;
+  background-color: $color-background-light;
+  padding: 25px;
+  min-width: 206px;
 
-    @media (min-width: 768px) {
-      min-width: 250px;
-    }
+  @media (min-width: 768px) {
+    min-width: 250px;
+  }
+
+  @media (min-width: 1366px) {
+    min-width: 230px;
+  }
 }

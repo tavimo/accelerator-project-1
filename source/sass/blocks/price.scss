@@ -1,69 +1,90 @@
 .price {
-    background-color: $color-background-extra;
+  background-color: $color-background-extra;
 }
 
 .price__container {
-    padding: 40px 15px 40px;
+  padding: 40px 15px 40px;
 
-    @media (min-width: 768px) {
-      padding: 60px 30px 60px;
-    }
+  @media (min-width: 768px) {
+    padding: 60px 30px 60px;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 100px 103px 100px;
+  }
 }
 
 .price__title {
-    margin: 0;
-    padding: 0;
-    font-family: $title-font;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 0%;
-    color: $color-text-basic;
-    text-align: center;
-    margin-bottom: 30px;
+  margin: 0;
+  padding: 0;
+  font-family: $title-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: $color-text-basic;
+  text-align: center;
+  margin-bottom: 30px;
 
-    @media (min-width: 768px) {
-      font-size: 42px;
-      line-height: 42px;
-      margin-bottom: 35px;
-    }
+  @media (min-width: 768px) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 20px;
+  }
 }
 
 .price__sorting {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    color: $color-text-basic;
-    opacity: 0.5;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #DEDFE2;
-    margin-bottom: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-text-basic;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #dedfe2;
+  margin-bottom: 28px;
 
-    @media (min-width: 768px) {
-      width: 310px;
-      margin: 0 auto;
-      font-size: 18px;
-      line-height: 18px;
-      padding-bottom: 8px;
-      margin-bottom: 45px;
-    }
+  @media (min-width: 768px) {
+    width: 310px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 8px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    width: 350px;
+  }
 }
 
 .price__cards-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
 
-    @media (min-width: 768px) {
-      gap: 40px;
-    }
+  @media (min-width: 768px) {
+    gap: 40px;
+  }
+
+  @media (min-width: 1366px) {
+    flex-direction: row;
+  }
 }
