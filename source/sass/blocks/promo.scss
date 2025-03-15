@@ -13,7 +13,7 @@
 
 }
 
-picture {
+.promo picture {
     @media (min-width: 768px) {
         grid-row: 1/5;
         grid-column: 3/4;
@@ -27,7 +27,7 @@ picture {
         display: block;
         margin-left: 4px;
       }
-    
+
 }
 
 .promo__location {
