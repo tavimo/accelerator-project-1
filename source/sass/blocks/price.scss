@@ -1,5 +1,25 @@
 .price {
   background-color: $color-background-extra;
+
+  @media (min-width: 768px) {
+    background-image: url(../../img/images/price-background-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  @media (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url(../../img/images/price-background-tablet@2x.png);
+  }
+
+  @media (min-width: 1366px) {
+    background-image: url(../../img/images/price-background-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  @media (min-width: 1366px) and (min-resolution: 2dppx) {
+    background-image: url(../../img/images/price-background-desktop@2x.png);
+  }
 }
 
 .price__container {
