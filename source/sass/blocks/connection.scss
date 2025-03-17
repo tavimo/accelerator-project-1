@@ -1,0 +1,17 @@
+.connection {
+  @media (min-width: 1366px) {
+    display: flex;
+  }
+}
+
+.connection__form {
+  @media (min-width: 1366px) {
+    width: 683px;
+  }
+}
+
+.connection__contacts {
+  @media (min-width: 1366px) {
+    width: 683px;
+  }
+}

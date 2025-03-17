@@ -161,7 +161,7 @@
               </picture>
         <span class="juri-card__name">Алексей Лавров</span>
             </article>
-          <!-- </li>
+          </li>
           <li class="juri__item">
             <article class="juri-card">
               <picture>
@@ -179,7 +179,7 @@
               </picture>
         <span class="juri-card__name">Мария Кетова</span>
             </article>
-          </li> -->
+          </li>
         </ul>
 
         <picture>
@@ -213,7 +213,7 @@
             <article class="features-card features-card--accent">
               <h3 class="visually-hidden">Тренажеры</h3>
               <span class="features-card__number">100</span>
-              <span class="features-card__info-text">Тренажёров</span>
+              <span class="features-card__info">Тренажёров</span>
               <p class="features-card__descriptions">Современные тренажёры на все группы мышц</p>
             </article>
           </li>
@@ -432,60 +432,62 @@
     </section>
 
 
-    <section class="form" data-test="form">
-      <div class="container form__container">
-        <h2 class="form__title">Бесплатное занятие</h2>
-        <form
-              class="form__data"
-              action="https://echo.htmlacademy.ru/"
-              method="post">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input
+    <div class="connection">
+      <section class="connection__form form" data-test="form">
+        <div class="container form__container">
+          <h2 class="form__title">Бесплатное занятие</h2>
+          <form
+                class="form__data"
+                action="https://echo.htmlacademy.ru/"
+                method="post">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input
+                  class="form__input"
+                  type="name"
+                  name="name"
+                  id="name"
+                  placeholder="Имя"
+                />
+                <label class="visually-hidden" for="tel">Телефон</label>
+                <input
                 class="form__input"
-                type="name"
-                name="name"
-                id="name"
-                placeholder="Имя"
-              />
-              <label class="visually-hidden" for="tel">Телефон</label>
-              <input
-              class="form__input"
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Телефон"
-              />
-              <button class="button form__button" type="button">
-                Отправить
-              </button>
-            </form>
-      </div>
-    </section>
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Телефон"
+                />
+                <button class="button form__button" type="button">
+                  Отправить
+                </button>
+              </form>
+        </div>
+      </section>
 
-    <section class="contacts">
-      <div class="container contacts__container">
-        <h2 class="contacts__title">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Адрес:</h3>
-            <p class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">График работы:</h3>
-            <p class="contacts__item-info">Пн-Вс: с 8:00 до 22:00</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Телефон:</h3>
-            <a class="contacts__item-info" href="8800555-55-55">8 800 555-55-55</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Email:</h3>
-            <a class="contacts__item-info" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-          </li>
-          <li class="contacts__item contacts__item--divider"><div class="contacts__item-divider"></div></li>
-        </ul>
-      </div>
-    </section>
+      <section class="connection__contacts contacts">
+        <div class="container contacts__container">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Адрес:</h3>
+              <p class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">График работы:</h3>
+              <p class="contacts__item-info">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Телефон:</h3>
+              <a class="contacts__item-info" href="8800555-55-55">8 800 555-55-55</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Email:</h3>
+              <a class="contacts__item-info" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            </li>
+            <li class="contacts__item contacts__item--divider"><div class="contacts__item-divider"></div></li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
 
     <div class="footer" data-test="footer">

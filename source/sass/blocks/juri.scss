@@ -1,40 +1,44 @@
 .juri__container {
-    padding: 40px 30px;
+  padding: 40px 30px;
 
-    @media (min-width: 768px) {
-      padding: 30px 45px 60px;
-   }
+  @media (min-width: 768px) {
+    padding: 30px 45px 60px;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 100px 103px;
+  }
 }
 
 .juri__title {
-    margin: 0;
-    padding: 0;
-    font-family: $title-font;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 32px;
-    text-align: center;
-    margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: $title-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 20px;
 
-    @media (min-width: 768px) {
-      font-size: 54px;
-      line-height: 54px;
-      margin-bottom: 46px;
-   }
+  @media (min-width: 768px) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 46px;
+  }
 }
 
 .juri__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-    @media (min-width: 768px) {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-   }
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 .juri-card__photo {
-    display: block;
+  display: block;
 }
