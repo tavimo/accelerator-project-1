@@ -27,6 +27,12 @@
   }
 }
 
+.juri__slider-wrapper {
+  @media (min-width: 768px) {
+    position: relative;
+  }
+}
+
 .juri__list {
   margin: 0;
   padding: 0;
@@ -41,4 +47,39 @@
 
 .juri-card__photo {
   display: block;
+}
+
+.juri__button {
+  display: none;
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 59px;
+    height: 300px;
+    background-image: url(../../img/icons/jury-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+    z-index: 2;
+    border: none;
+  }
+}
+
+.juri__button-prev {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.juri__button-next {
+  @media (min-width: 768px) {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }

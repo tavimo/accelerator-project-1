@@ -4,7 +4,13 @@
 // import 'swiper/css';
 
 
-//
+//Жюри слайдер
+
+
+
+
+
+//Секция с вопросами
 
 document.addEventListener('DOMContentLoaded', () => {
   // Переключение вкладок
