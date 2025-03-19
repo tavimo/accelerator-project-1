@@ -3,9 +3,53 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
+//-----------------------------------------Абонементы цена
+document.addEventListener('DOMContentLoaded', () => {
+  // Получаем все элементы вкладок и списков карт
+  const tabs = document.querySelectorAll('.price__item');
+  const cardsLists = document.querySelectorAll('.price__cards-list');
+
+  // Функция для скрытия всех списков карт
+  function hideAllLists() {
+    cardsLists.forEach((list) => {
+      list.style.display = 'none';
+    });
+  }
+
+  // Функция для отображения списка, соответствующего вкладке
+  function showList(tab) {
+    const tabName = tab.textContent.trim().toLowerCase(); // Получаем имя вкладки (например, "1 месяц")
+    const activeList = document.querySelector(`.price__cards-list[data-tab="${tabName}"]`);
+
+    if (activeList) {
+      activeList.style.display = 'flex'; // Показываем список с картами для выбранной вкладки
+    }
+  }
+
+  // Добавляем обработчики событий для вкладок
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((tabItem) => tabItem.classList.remove('price__item--active')); // Убираем класс активности у всех вкладок
+      tab.classList.add('price__item--active'); // Добавляем класс активности выбранной вкладке
+
+      hideAllLists(); // Скрываем все списки
+      showList(tab); // Показываем соответствующий список
+    });
+  });
+
+  // Инициализация: скрываем все списки, показываем первый по умолчанию
+  hideAllLists();
+  if (tabs.length > 0) {
+    tabs[0].classList.add('price__item--active'); // Устанавливаем активной первую вкладку
+    showList(tabs[0]); // Показываем список для первой вкладки
+  }
+});
 
 
-//Жюри слайдер
+
+
+
+//------------------------------------------Жюри слайдер
   new Swiper(".juri__slider-wrapper", {
     loop: true, // Бесконечный цикл
     navigation: {
@@ -25,7 +69,7 @@
   });
 
 
-//Блок вопросы
+//----------------------------------------------Блок вопросы
 document.addEventListener('DOMContentLoaded', () => {
   // Вкладки
   const tabs = document.querySelectorAll('.faq__sorting-item');
