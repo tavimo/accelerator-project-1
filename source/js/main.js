@@ -25,48 +25,57 @@
   });
 
 
-
-//Секция с вопросами
-
+//Блок вопросы
 document.addEventListener('DOMContentLoaded', () => {
-  // Переключение вкладок
+  // Вкладки
   const tabs = document.querySelectorAll('.faq__sorting-item');
   const lists = document.querySelectorAll('.faq__list');
 
-  // Сохраняем состояние вкладок
-  const activeTab = localStorage.getItem('activeTab') || 'центр';
-
   // Функция для отображения активной вкладки
   function setActiveTab(tab) {
-    tabs.forEach((tabItem) => {
-      tabItem.classList.remove('faq__sorting-item--current'); // Убираем класс с всех вкладок
-    });
-    const activeTabElement = [...tabs].find((tabItem) => tabItem.querySelector('button').textContent.toLowerCase() === tab);
-    if (activeTabElement) {
-      activeTabElement.classList.add('faq__sorting-item--current'); // Добавляем класс активной вкладке
-    }
+    tabs.forEach((tabItem) => tabItem.classList.remove('faq__sorting-item--current'));
+    lists.forEach((list) => list.style.display = 'none');
 
-    lists.forEach((list) => {
-      list.style.display = 'none'; // Прячем все списки
-    });
+    const activeTabElement = [...tabs].find((tabItem) => tabItem.querySelector('button').textContent.toLowerCase() === tab);
     const activeList = document.querySelector(`.faq__list[data-tab="${tab}"]`);
+
+    if (activeTabElement) {
+      activeTabElement.classList.add('faq__sorting-item--current');
+    }
     if (activeList) {
-      activeList.style.display = 'block'; // Показываем только активный список
+      activeList.style.display = 'block';
     }
   }
 
-  // Инициализация вкладки, основываясь на сохраненном состоянии
-  setActiveTab(activeTab);
+  // Инициализация первого таба
+  const firstTabName = tabs.length > 0 ? tabs[0].querySelector('button').textContent.toLowerCase() : null;
+  if (firstTabName) {
+    setActiveTab(firstTabName);
+  }
 
+  // Обработка клика по вкладке
   tabs.forEach((tab) => {
     tab.addEventListener('click', () => {
       const tabName = tab.querySelector('button').textContent.toLowerCase();
       setActiveTab(tabName);
-      localStorage.setItem('activeTab', tabName); // Сохраняем активную вкладку в локальное хранилище
+    });
+
+    // Поддержка навигации клавишами (ArrowLeft, ArrowRight, Enter)
+    tab.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        const tabName = tab.querySelector('button').textContent.toLowerCase();
+        setActiveTab(tabName);
+      } else if (event.key === 'ArrowRight') {
+        let nextTab = tab.nextElementSibling || tabs[0]; // Переход к следующей вкладке
+        nextTab.querySelector('button').focus(); // Фокус на следующую вкладку
+      } else if (event.key === 'ArrowLeft') {
+        let prevTab = tab.previousElementSibling || tabs[tabs.length - 1]; // Переход к предыдущей вкладке
+        prevTab.querySelector('button').focus(); // Фокус на предыдущую вкладку
+      }
     });
   });
 
-  // Работа с аккордеонами
+  // Аккордеоны
   const items = document.querySelectorAll('.faq__item');
 
   items.forEach((item) => {
@@ -75,5 +84,20 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleButton.addEventListener('click', () => {
       item.classList.toggle('faq__item--open');
     });
+
+    // Поддержка клавиши пробел для аккордеона
+    toggleButton.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        item.classList.toggle('faq__item--open');
+      }
+    });
+
+    // Дополнительная поддержка пробела для переключения состояния аккордеона
+    toggleButton.addEventListener('keypress', (event) => {
+      if (event.key === ' ' || event.key === 'Enter') {
+        item.classList.toggle('faq__item--open');
+      }
+    });
   });
 });
+
