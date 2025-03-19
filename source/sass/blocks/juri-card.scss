@@ -1,26 +1,33 @@
 .juri-card {
-    font-display: flex;
-    flex-direction: column;
-    position: relative;
+  font-display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 260px;
+}
+
+.juri-card picture {
+  display: block;
+  padding: 0;
+  width: 100%;
 }
 
 .juri-card__photo {
-    display: block;
-    position: relative;
-    z-index: 1;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .juri-card__name {
-    display: block;
-    position: absolute;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
-    text-align: center;
-    color: $color-background-light;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    width: 100%;
+  display: block;
+  position: absolute;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: $color-background-light;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 100%;
 }

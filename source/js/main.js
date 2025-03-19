@@ -4,9 +4,25 @@
 // import 'swiper/css';
 
 
+
 //Жюри слайдер
-
-
+  new Swiper(".juri__slider-wrapper", {
+    loop: true, // Бесконечный цикл
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1, // Один слайд на экране
+    spaceBetween: 40, // Отступ между слайдами
+    breakpoints: {
+      768: {
+        slidesPerView: 2, // На планшете — 2 слайда
+      },
+      1366: {
+        slidesPerView: 4, // На десктопе — 3 слайда
+      },
+    },
+  });
 
 
 
