@@ -4,14 +4,22 @@
   flex-direction: column;
   background-color: $color-background-light;
   align-items: center;
+  position: relative;
+  border: 7px solid transparent;
+  background-clip: padding-box;
 
   @media (min-width: 768px) {
     padding: 65px;
-    width: 380px;
+    width: 394px;
   }
 
   @media (min-width: 1366px) {
-    width: 360px;
+    width: 374px;
+  }
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(128deg, #d10a42 0%, #00359f 100%) 1;
   }
 }
 
@@ -134,5 +142,34 @@
 
   @media (min-width: 1366px) {
     min-width: 230px;
+  }
+
+  &:hover {
+    background: linear-gradient(128deg, #ed0233 0%, #003eb7 100%);
+    color: $color-text-light;
+    border: transparent;
+    height: 66px;
+  }
+  &:focus {
+    background: linear-gradient(
+      128deg,
+      rgba(#ed0233, $alpha: 0.8) 0%,
+      rgba(#003eb7, $alpha: 0.8) 100%
+    );
+    border: 2px solid #000000;
+    color: $color-text-light;
+  }
+  &:active {
+    background: linear-gradient(128deg, #ed0233 0%, #003eb7 100%);
+    color: rgba($color-text-light, $alpha: 0.5);
+    border: transparent;
+    height: 66px;
+  }
+  &:disabled {
+    background-color: none;
+    border: 2px solid #000000;
+    background: none;
+    color: #000000;
+    opacity: 0.3;
   }
 }

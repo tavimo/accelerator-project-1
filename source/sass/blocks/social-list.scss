@@ -1,11 +1,12 @@
 .social-list {
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   display: flex;
   gap: 20px;
   list-style: none;
 
   @media (min-width: 768px) {
+    padding: 0;
     gap: 15px;
   }
   @media (min-width: 1366px) {
@@ -15,13 +16,30 @@
 
 .social-list__link {
   display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: $color-text-light;
+
+  &:hover {
+    background-color: #74819c;
+  }
+  &:focus {
+    background-color: #103aae;
+  }
+  &:active {
+    background-color: $color-text-basic;
+  }
+  &:disabled {
+    background-color: $color-text-light;
+    opacity: 0.3;
+  }
 }
 
 .social-list__item {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: $color-text-light;
   position: relative;
 }
 
@@ -39,6 +57,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    background-color: $color-text-light;
+  }
+  &:disabled::before {
+    background-color: #030a1a;
+  }
 }
 
 .social-list__link--ok {
@@ -55,6 +82,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    background-color: $color-text-light;
+  }
+  &:disabled::before {
+    background-color: #030a1a;
+  }
 }
 
 .social-list__link--reddit {
@@ -70,5 +105,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    background-color: $color-text-light;
+  }
+  &:disabled::before {
+    background-color: #030a1a;
   }
 }

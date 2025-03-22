@@ -10,7 +10,7 @@
   }
 
   @media (min-width: 1366px) {
-    padding: 100px 103px;
+    padding: 99px 103px 100px;
     display: grid;
     grid-template-columns: 260px 860px;
     grid-template-rows: min-content auto;
@@ -89,6 +89,24 @@
   @media (min-width: 1366px) {
     width: 260px;
   }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color-text-basic;
+  }
+
+  &:active {
+    background: linear-gradient(128deg, #ed0233 0%, #003eb7 100%);
+    color: $color-text-light;
+    border: transparent;
+  }
+  &:disabled {
+    background-color: none;
+    border: 1px solid $color-text-basic;
+    background: none;
+    color: $color-text-basic;
+    opacity: 0.3;
+  }
 }
 
 .faq__sorting-item--current .faq__button {
@@ -156,10 +174,32 @@
 .faq__item-button {
   width: 30px;
   height: 30px;
-  border-radius: 20px;
+  border-radius: 50%;
   border: 1px solid $color-text-basic;
   background-color: transparent;
   position: relative;
+
+  &:hover {
+    background-color: $color-background-block-accent;
+  }
+  &:hover::after,
+  &:focus::after {
+    background-color: $color-text-light;
+  }
+  &:hover::before,
+  &:focus::before {
+    background-color: $color-text-light;
+  }
+
+  &:focus {
+    background-color: #74819c;
+  }
+
+  &:disabled {
+    border: 1px solid $color-text-basic;
+    background-color: transparent;
+    opacity: 0.3;
+  }
 
   &::after {
     content: "";

@@ -138,4 +138,25 @@
     margin-top: 40px;
     padding: 25px;
   }
+
+  &:hover {
+    background-color: $color-background-light;
+    color: $color-text-accent;
+  }
+  &:focus {
+    background-color: rgba($color: $color-background-light, $alpha: 0.8);
+    border: 2px solid #000000;
+    color: $color-text-accent;
+  }
+  &:active {
+    background-color: $color-background-light;
+    color: $color-text-basic;
+  }
+  &:disabled {
+    background-color: none;
+    border: 2px solid $color-text-light;
+    background: none;
+    color: $color-text-light;
+    opacity: 0.5;
+  }
 }

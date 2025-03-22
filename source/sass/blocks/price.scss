@@ -3,10 +3,10 @@
 }
 
 .price__container {
-  padding: 40px 15px 40px;
+  padding: 40px 15px 33px;
 
   @media (min-width: 768px) {
-    padding: 60px 30px 60px;
+    padding: 60px 30px 53px;
     background-image: url(../../img/images/price-background-tablet@1x.png);
     background-repeat: no-repeat;
     background-size: 407px 422px;
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: 1366px) {
-    padding: 100px 103px 100px;
+    padding: 100px 96px 93px;
     background-image: url(../../img/images/price-background-desktop@1x.png);
     background-repeat: no-repeat;
     background-position: 1063px 345px;
@@ -60,6 +60,7 @@
   border-bottom: 2px solid #d10a42;
   opacity: 1;
   margin-bottom: -2px;
+  pointer-events: none;
 }
 
 .price__sorting {
@@ -73,7 +74,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #dedfe2;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   position: relative;
   z-index: 0;
 
@@ -82,23 +83,34 @@
     margin: 0 auto;
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: 1366px) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     width: 350px;
   }
 }
 
 .price__item {
   opacity: 0.5;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 
   @media (min-width: 768px) {
     padding-bottom: 8px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    border-bottom: 2px solid $color-text-basic;
+    margin-bottom: -2px;
+  }
+  &:focus {
+    opacity: 1;
+    border-bottom: 2px solid $color-text-basic;
+    margin-bottom: -2px;
   }
 }
 
@@ -108,11 +120,11 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 21px;
   align-items: center;
 
   @media (min-width: 768px) {
-    gap: 40px;
+    gap: 26px;
   }
 
   @media (min-width: 1366px) {

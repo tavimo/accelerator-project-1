@@ -163,6 +163,17 @@
     margin-left: 5px;
   }
 
+  &:hover::before {
+    background-color: $color-text-light;
+  }
+  &:focus {
+  }
+
+  &:active {
+  }
+  &:disabled {
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#14367a80, #14367a80),
       url(../../img/images/about-video-img-mobile@2x.jpg);

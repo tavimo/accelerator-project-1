@@ -209,6 +209,27 @@
   @media (min-width: 768px) {
     padding: 25px;
   }
+
+  &:hover {
+    background-color: $color-background-light;
+    color: $color-background-banner;
+  }
+  &:focus {
+    background-color: rgba($color: $color-background-light, $alpha: 0.8);
+    border: 2px solid #000000;
+    color: $color-background-banner;
+  }
+  &:active {
+    background-color: $color-background-light;
+    color: $color-background-banner;
+  }
+  &:disabled {
+    background-color: none;
+    border: 2px solid $color-text-light;
+    background: none;
+    color: $color-text-light;
+    opacity: 0.5;
+  }
 }
 
 .games__img {

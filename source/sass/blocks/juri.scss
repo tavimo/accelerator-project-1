@@ -2,11 +2,11 @@
   padding: 40px 30px;
 
   @media (min-width: 768px) {
-    padding: 30px 45px 60px;
+    padding: 30px 20px 60px;
   }
 
   @media (min-width: 1366px) {
-    padding: 100px 48px;
+    padding: 100px 20px;
   }
 }
 
@@ -32,15 +32,16 @@
 }
 
 .juri__slider-wrapper-button {
-  width: 260px;
+  width: 400px;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
-    width: 678px;
+    width: 718px;
   }
   @media (min-width: 1366px) {
-    width: 1270px;
+    width: 1317px;
   }
 }
 
@@ -73,24 +74,72 @@
   position: relative;
 
   @media (min-width: 768px) {
-    margin: 0;
-    padding: 0;
     display: block;
-    width: 59px;
+    width: 79px;
     height: 300px;
-    background-image: url(../../img/icons/jury-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: 5px 50%;
-    z-index: 2;
     border: none;
+    position: relative;
+    background: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      width: 32px;
+      height: 32px;
+      mask-image: url(../../img/icons/jury-arrow.svg);
+      background-color: $color-text-basic;
+      mask-repeat: no-repeat;
+      transform: translateY(-50%);
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid $color-text-basic;
+      position: absolute;
+      top: 50%;
+      right: 42px;
+      transform: translateX(50%) translateY(-50%);
+      display: none;
+      z-index: 4;
+    }
+
+    &:hover::after {
+      display: block;
+    }
+    &:focus::after {
+      display: block;
+      background-color: #e8e8e8;
+    }
+    &:active::after {
+      display: block;
+      background-color: $color-text-basic;
+    }
+    &:active::before {
+      background-color: $color-text-light;
+    }
+    &:disabled::after {
+      background-color: transparent;
+      border: none;
+      opacity: 0.3;
+    }
+    &:disabled::before {
+      background-color: $color-text-basic;
+      opacity: 0.3;
+    }
   }
 }
 
 .juri__button-prev {
   @media (min-width: 768px) {
     position: absolute;
-    top: 0;
-    left: -59px;
+    top: 22px;
+    left: -79px;
   }
 }
 
@@ -98,8 +147,8 @@
   @media (min-width: 768px) {
     transform: rotate(180deg);
     position: absolute;
-    top: 0;
-    right: -59px;
+    top: 22px;
+    right: -79px;
   }
 }
 

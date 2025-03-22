@@ -145,7 +145,7 @@
   line-height: 20px;
   text-align: center;
   color: $color-text-light;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -166,7 +166,29 @@
   text-align: center;
   color: $color-text-light;
   border-bottom: 1px solid $color-text-light;
-  padding-bottom: 5px;
+  padding-top: 11px;
+  padding-bottom: 4px;
+  min-height: 19px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:focus {
+    border: 1px solid $color-text-light;
+    padding: 10px;
+    margin-bottom: -6px;
+
+    @media (min-width: 768px) {
+      margin-left: -11px;
+    }
+  }
+  &:active {
+    color: $color-text-light;
+    border-bottom: 1px solid $color-text-light;
+  }
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .offers__img {
