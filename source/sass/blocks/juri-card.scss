@@ -3,12 +3,6 @@
   flex-direction: column;
   position: relative;
   width: 260px;
-
-  &:hover,
-  &:focus {
-    background-color: rgba($color: $color-text-basic, $alpha: 0.89);
-    z-index: 5;
-  }
 }
 
 .juri-card picture {

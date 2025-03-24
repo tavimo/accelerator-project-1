@@ -152,7 +152,7 @@
   }
 }
 
-.swiper {
+.juri__slider-wrapper.swiper {
   @media (min-width: 768px) {
     width: 560px;
   }
@@ -161,7 +161,7 @@
   }
 }
 
-.swiper-button-next {
+.juri__button-next.swiper-button-next {
   background-color: #ffffff;
 
   &::after,
@@ -170,7 +170,7 @@
   }
 }
 
-.swiper-button-prev {
+.juri__button-prev.swiper-button-prev {
   background-color: #ffffff;
 
   &::after,

@@ -51,10 +51,9 @@
       <div class="container about__container">
         <div class="about__wrapper">
           <h2 class="about__title">Тренажёрный зал</h2>
-          <p class="about__title-info">Просторный зал площадью 900 кв/м</p>
-          <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p class="about__description about__description--2">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-
+          <span class="about__title-info">Просторный зал площадью 900 кв/м</span>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <picture>
           <source media="(min-width: 1366px)" width="660" height="400" type="image/webp" srcset="img/images/about-desktop@1x.webp 1x, img/images/about-desktop@2x.webp 2x">
@@ -64,7 +63,9 @@
           <source media="(min-width: 768px)" width="678" height="345" type="image/png" srcset="img/images/about-tablet@1x.jpg 1x, img/images/about-tablet@2x.jpg 2x">
           <img class="about__img" src="img/images/about-mobile@1x.jpg" srcset="img/images/about-mobile@2x.jpg 2x" width="320" height="280" alt="Изображение нашего тренажерного зала">
         </picture>
-        <div class="about__iframe"></div>
+        <div class="about__iframe">
+          <button class="about__iframe-button" aria-label="Запустить видео"></button>
+        </div>
       </div>
     </section>
 
@@ -246,7 +247,7 @@
                     <img class="juri-card__photo" src="img/images/juri-card-3@1x.jpg" srcset="img/images/juri-card-3@2x.jpg 2x" width="290" height="290" alt="Фотография Александра Пашкова">
                   </picture>
                 <span class="juri-card__name">Александр Пашков</span>
-                <div class="juri-card__info">
+                <div class="juri-card__info" tabindex="0">
                     <p class="juri-card__info-name">Александр Пашков</p>
                     <span class="juri-card__info-class">CrossFit</span>
                     <ul class="juri-card__info-list">
@@ -322,42 +323,42 @@
         <ul class="features__list">
           <li class="features__item">
             <article class="features-card">
-              <span class="features-card__number">900</span>
-              <span class="features-card__info-text">кв/м</span>
-              <h3 class="features-card__title">Площадь</h3>
-              <p class="features-card__descriptions">Занимайтесь без очередей и толкучки</p>
+              <span>900</span>
+              <span>кв/м</span>
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей и толкучки</p>
             </article>
           </li>
           <li class="features__item">
             <article class="features-card">
-              <span class="features-card__number">70</span>
-              <span class="features-card__info-text">машин</span>
-              <h3 class="features-card__title">Собственная парковка</h3>
-              <p class="features-card__descriptions">Вы всегда найдёте место для своей машины на нашей парковке</p>
+              <span>70</span>
+              <span>машин</span>
+              <h3>Собственная парковка</h3>
+              <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
             </article>
           </li>
           <li class="features__item features__item--accent">
             <article class="features-card features-card--accent">
-              <h3 class="visually-hidden">Тренажеры</h3>
-              <span class="features-card__number">100</span>
-              <span class="features-card__info">Тренажёров</span>
-              <p class="features-card__descriptions">Современные тренажёры на все группы мышц</p>
+              <h3>Тренажеры</h3>
+              <span>100</span>
+              <span>Тренажёров</span>
+              <p>Современные тренажёры на все группы мышц</p>
             </article>
           </li>
           <li class="features__item">
             <article class="features-card">
-              <span class="features-card__number">350</span>
-              <span class="features-card__info-text">мест</span>
-              <h3 class="features-card__title">Комфорт</h3>
-              <p class="features-card__descriptions">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              <span>350</span>
+              <span>мест</span>
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </article>
           </li>
           <li class="features__item">
             <article class="features-card">
-              <span class="features-card__number">5+</span>
-              <span class="features-card__info-text">лет</span>
-              <h3 class="features-card__title">Тренерский опыт</h3>
-              <p class="features-card__descriptions">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              <span>5+</span>
+              <span>лет</span>
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </article>
           </li>
         </ul>
@@ -370,9 +371,9 @@
         <h2 class="offers__title">Акции</h2>
         <div class="offers__hero">
           <div class="offers__hero-wrapper">
-            <span class="offers__hero-text">Год</span>
-            <span class="offers__hero-price">4999</span>
-            <p class="offers__hero-description">Безлимитный абонемент в тренажёрный зал</p>
+            <span>Год</span>
+            <span>4999</span>
+            <p>Безлимитный абонемент в тренажёрный зал</p>
             <a class="offers__hero-link" href="#">Подробнее</a>
           </div>
           <picture>
@@ -387,8 +388,8 @@
         <ul class="offers__list">
           <li class="offers__item">
             <article class="offers-card">
-              <h3 class="offers-card__title">Месяц бесплатно</h3>
-              <p class="offers-card__description">Приведи друга, получи абонемент в подарок</p>
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
               <a class="offers-card__link" href="#">Подробнее</a>
             </article>
           </li>
@@ -415,123 +416,123 @@
           <li class="faq__sorting-item"><button class="button faq__button" type="button">Правила</button></li>
         </ul>
         <ul class="faq__list" data-tab="центр">
-          <li class="faq__item faq__item--open">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Как стать членом фитнес-центра?</h3>
+          <li class="faq__item--open">
+            <div>
+              <h3>Как стать членом фитнес-центра?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
           </li>
           <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Где можно посмотреть расписание?</h3>
+            <div>
+              <h3>Где можно посмотреть расписание?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description">Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+            <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
           </li>
           <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Есть кулеры в центре? Предоставляются полотенца?</h3>
+            <div>
+              <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p></p>
           </li>
           <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Сколько тренеров работает в клубе и какова их квалификация?</h3>
+            <div>
+              <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
                 <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p></p>
           </li>
         </ul>
         <ul class="faq__list" data-tab="абонемент">
-          <li class="faq__item faq__item--open">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Занятия с тренером входят в абонемент?</h3>
+          <li>
+            <div>
+              <h3>Занятия с тренером входят в абонемент?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+            <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Можно ли заморозить абонемент?</h3>
+          <li>
+            <div>
+              <h3>Можно ли заморозить абонемент?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p></p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+          <li>
+            <div>
+              <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p></p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Что такое семейный доступ и доступ для друзей?</h3>
+          <li>
+            <div>
+              <h3>Что такое семейный доступ и доступ для друзей?</h3>
                 <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p></p>
           </li>
         </ul>
         <ul class="faq__list" data-tab="услуги">
-          <li class="faq__item faq__item--open">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+          <li>
+            <div>
+              <h3>Пpедлагает ли клуб услуги по консультированию по вопросам питания?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+            <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+          <li>
+            <div>
+              <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p></p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Можно ли приобрести в центре спортивное питание?</h3>
+          <li>
+            <div>
+              <h3>Можно ли приобрести в центре спортивное питание?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"> </p>
+            <p></p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Есть ли в центре детская комната?</h3>
+          <li>
+            <div>
+              <h3>Есть ли в центре детская комната?</h3>
                 <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p></p>
           </li>
         </ul>
         <ul class="faq__list" data-tab="правила">
-          <li class="faq__item faq__item--open">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Есть в фитнес-центре дресс-код?</h3>
+          <li>
+            <div>
+              <h3>Есть в фитнес-центре дресс-код?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+            <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Можно ли приводить с собой детей на тренировки?</h3>
+          <li>
+            <div>
+              <h3>Можно ли приводить с собой детей на тренировки?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p> </p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Какие дополнительные правила посещения центра?</h3>
+          <li>
+            <div>
+              <h3>Какие дополнительные правила посещения центра?</h3>
               <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p></p>
           </li>
-          <li class="faq__item">
-            <div class="faq__item-wrapper">
-              <h3 class="faq__item-title">Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+          <li>
+            <div>
+              <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
                 <button class="faq__item-button" type="button"><span class="visually-hidden">Показать/скрыть ответ на вопрос</span></button>
             </div>
-            <p class="faq__item-description"></p>
+            <p> </p>
           </li>
         </ul>
       </div>
@@ -541,20 +542,36 @@
     <section class="reviews" data-test="reviews">
       <div class="container reviews__container">
         <h2 class="reviews__title">Отзывы</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <article class="reviews-card">
-              <div class="reviews-card__wrapper-photo">
-                <picture>
-                  <source type="image/webp" width="80" height="80" srcset="img/images/reviews-1@1x.webp 1x, img/images/reviews-1@2x.webp 2x">
-                  <img class="reviews-card__img" src="img/images/reviews-1@1x.jpg" srcset="img/images/reviews-1@2x.jpg 2x" width="80" height="80" alt="Фотография пользователя, написавшего отзыв">
-                </picture>
-              </div>
-              <h3 class="reviews-card__name">Анна Орлова</h3>
-                <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </article>
-          </li>
-        </ul>
+        <div class="reviews__slider swiper">
+          <div class="reviews__list swiper-wrapper">
+            <div class="reviews__item swiper-slide">
+              <article class="reviews-card">
+                <div class="reviews-card__wrapper-photo">
+                  <picture>
+                    <source type="image/webp" width="80" height="80" srcset="img/images/reviews-1@1x.webp 1x, img/images/reviews-1@2x.webp 2x">
+                    <img class="reviews-card__img" src="img/images/reviews-1@1x.jpg" srcset="img/images/reviews-1@2x.jpg 2x" width="80" height="80" alt="Фотография пользователя, написавшего отзыв">
+                  </picture>
+                </div>
+                <h3 class="reviews-card__name">Анна Орлова</h3>
+                  <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </article>
+            </div>
+            <div class="reviews__item swiper-slide">
+              <article class="reviews-card reviews-card--2">
+                <div class="reviews-card__wrapper-photo">
+                  <picture>
+                    <source type="image/webp" width="80" height="80" srcset="img/images/reviews-1@1x.webp 1x, img/images/reviews-1@2x.webp 2x">
+                    <img class="reviews-card__img" src="img/images/reviews-1@1x.jpg" srcset="img/images/reviews-1@2x.jpg 2x" width="80" height="80" alt="Фотография пользователя, написавшего отзыв">
+                  </picture>
+                </div>
+                <h3 class="reviews-card__name">Анна Орлова</h3>
+                  <p class="reviews-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </article>
+            </div>
+          </div>
+          <button class="reviews__button reviews__button-prev swiper-button-prev" type="button" aria-label="Посмотреть предыдущий слайд"></button>
+          <button class="reviews__button reviews__button-next swiper-button-next" type="button" aria-label="Посмотреть следующий слайд"></button>
+        </div>
       </div>
     </section>
 

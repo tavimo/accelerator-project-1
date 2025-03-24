@@ -2,7 +2,7 @@
   padding: 40px;
 
   @media (min-width: 768px) {
-    padding: 60px 45px;
+    padding: 60px 25px;
   }
 
   @media (min-width: 1366px) {
@@ -35,4 +35,99 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.reviews__button {
+  display: none;
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 79px;
+    height: 100%;
+    border: none;
+    position: relative;
+    background: none;
+    position: absolute;
+    top: 22px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      width: 32px;
+      height: 32px;
+      mask-image: url(../../img/icons/jury-arrow.svg);
+      background-color: $color-text-basic;
+      mask-repeat: no-repeat;
+      transform: translateY(-50%);
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid $color-text-basic;
+      position: absolute;
+      top: 50%;
+      right: 42px;
+      transform: translateX(50%) translateY(-50%);
+      display: none;
+      z-index: 4;
+    }
+
+    &:hover::after {
+      display: block;
+    }
+    &:focus::after {
+      display: block;
+      background-color: #e8e8e8;
+    }
+    &:active::after {
+      display: block;
+      background-color: $color-text-basic;
+    }
+    &:active::before {
+      background-color: $color-text-light;
+    }
+    &:disabled::after {
+      background-color: transparent;
+      border: none;
+      opacity: 0.3;
+    }
+    &:disabled::before {
+      background-color: $color-text-basic;
+      opacity: 0.3;
+    }
+  }
+}
+
+.reviews__slider.swiper {
+  position: relative;
+}
+
+.reviews__button-prev {
+  @media (min-width: 768px) {
+    left: -6px;
+  }
+  @media (min-width: 1366px) {
+    left: 170px;
+  }
+}
+
+.reviews__button-next {
+  @media (min-width: 768px) {
+    transform: rotate(180deg);
+    right: -6px;
+  }
+  @media (min-width: 1366px) {
+    right: 170px;
+  }
+}
+
+.reviews__slider {
+  position: relative;
 }
