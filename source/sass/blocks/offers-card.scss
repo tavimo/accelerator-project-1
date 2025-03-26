@@ -70,6 +70,11 @@
   padding-top: 11px;
   padding-bottom: 4px;
   min-height: 19px;
+  max-width: 100%;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 
   &:hover {
     opacity: 0.8;

@@ -30,11 +30,13 @@
           <div class="hero__info promo">
             <span class="promo__location">Омск</span>
             <h1 class="promo__title">Фитнес центр</h1>
-            <ul class="promo__list">
-              <li class="promo__item"><a href="#">Тренажерный зал</a></li>
-              <li class="promo__item"><a href="#">Групповые занятия</a></li>
-              <li class="promo__item"><a href="#">Кардио-зона</a></li>
-            </ul>
+            <nav class="promo__nav">
+              <ul class="promo__list">
+                <li class="promo__item"><a href="#">Тренажёрный зал</a></li>
+                <li class="promo__item"><a href="#">Групповые занятия</a></li>
+                <li class="promo__item"><a href="#">Кардио-зона</a></li>
+              </ul>
+            </nav>
             <a class="button promo__button" href="#">Купить абонимент</a>
             <picture>
               <source media="(min-width: 1366px)" width="500" height="524" type="image/webp" srcset="img/images/hero-desktop@1x.webp 1x, img/images/hero-desktop@2x.webp 2x">
@@ -580,30 +582,17 @@
       <section class="connection__form form" data-test="form">
         <div class="container form__container">
           <h2 class="form__title">Бесплатное занятие</h2>
-          <form
-                class="form__data"
-                action="https://echo.htmlacademy.ru/"
-                method="post">
+          <form class="form__data" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__input-wrapper">
                 <label class="visually-hidden" for="name">Имя</label>
-                <input
-                  class="form__input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Имя"
-                >
+                <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required pattern="^[А-Яа-яЁёA-Za-z\s]+$">
+            </div>
+            <div class="form__input-wrapper">
                 <label class="visually-hidden" for="phone">Телефон</label>
-                <input
-                class="form__input"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Телефон"
-                >
-                <button class="button form__button" type="submit">
-                  Отправить
-                </button>
-              </form>
+                <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="^[0-9\-\+\s]+$">
+            </div>
+            <button class="button form__button" type="submit">Отправить</button>
+        </form>
         </div>
       </section>
 

@@ -246,3 +246,34 @@ new Swiper(".reviews__slider", {
   },
 });
 
+//________________________________________Форма
+document.querySelector('.form__data').addEventListener('submit', function(event) {
+  let isValid = true;
+  const nameInput = document.getElementById('name');
+  const phoneInput = document.getElementById('phone');
+
+  const nameError = document.getElementById('name-error');
+  const phoneError = document.getElementById('phone-error');
+
+  if (!nameInput.value.trim().match(/^[А-Яа-яЁёA-Za-z\s]+$/)) {
+      nameInput.classList.add('error');
+      nameError.style.display = 'block';
+      isValid = false;
+  } else {
+      nameInput.classList.remove('error');
+      nameError.style.display = 'none';
+  }
+
+  if (!phoneInput.value.trim().match(/^[0-9\-\+\s]+$/)) {
+      phoneInput.classList.add('error');
+      phoneError.style.display = 'block';
+      isValid = false;
+  } else {
+      phoneInput.classList.remove('error');
+      phoneError.style.display = 'none';
+  }
+
+  if (!isValid) {
+      event.preventDefault();
+  }
+});

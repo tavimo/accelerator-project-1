@@ -33,6 +33,7 @@
   color: $color-text-basic;
   text-align: center;
   margin-bottom: 18px;
+  width: 100%;
 
   @media (min-width: 768px) {
     font-size: 24px;
@@ -52,6 +53,7 @@
   text-align: center;
   color: $color-text-basic;
   margin-bottom: 66px;
+  width: 100%;
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -88,6 +90,11 @@
   top: 0;
   right: 50%;
   transform: translateX(50%);
+  word-wrap: break-word;
+  text-align: center;
+  display: block;
+  max-width: 300px;
+  line-height: 24px;
 
   @media (min-width: 768px) {
     font-size: 100px;
@@ -104,6 +111,10 @@
   position: relative;
   left: -17px;
   z-index: 2;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+  word-break: break-word;
 
   &::after {
     content: "";
