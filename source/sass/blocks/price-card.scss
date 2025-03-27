@@ -7,14 +7,19 @@
   position: relative;
   border: 7px solid transparent;
   background-clip: padding-box;
+  z-index: 1;
+  min-height: 384px;
+  width: 290px;
 
   @media (min-width: 768px) {
     padding: 65px;
     width: 394px;
+    min-height: 460px;
   }
 
   @media (min-width: 1366px) {
     width: 374px;
+    min-height: 447px;
   }
 
   &:hover,
@@ -115,6 +120,8 @@
   white-space: normal;
   text-align: center;
   word-break: break-word;
+  display: inline-block;
+  max-width: 140px;
 
   &::after {
     content: "";
@@ -123,7 +130,7 @@
     background-image: url(../../img/icons/price-rub.svg);
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 11px;
     transform: translateY(-50%);
     top: 50%;
 
@@ -137,7 +144,6 @@
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 150%;
-    margin-bottom: 22px;
     margin-left: -10px;
   }
 }

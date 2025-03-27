@@ -1,4 +1,6 @@
 .connection {
+  min-width: 320px;
+
   @media (min-width: 1366px) {
     margin: 0 auto;
     display: flex;

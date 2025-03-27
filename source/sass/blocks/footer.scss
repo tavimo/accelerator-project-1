@@ -1,9 +1,11 @@
 .footer {
   background-color: $color-background-dark;
+  min-width: 320px;
 }
 
 .footer__container {
   padding: 40px 0;
+  min-width: 320px;
 
   @media (min-width: 768px) {
     padding: 45px 45px 41px 45px;

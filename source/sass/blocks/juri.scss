@@ -32,7 +32,7 @@
 }
 
 .juri__slider-wrapper-button {
-  width: 400px;
+  width: 260px;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -153,6 +153,8 @@
 }
 
 .juri__slider-wrapper.swiper {
+  width: 260px;
+
   @media (min-width: 768px) {
     width: 560px;
   }

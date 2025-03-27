@@ -45,10 +45,22 @@
   cursor: pointer;
   transition: opacity 0.3s;
 
-  &:hover,
   &:focus {
     opacity: 1;
     visibility: visible;
+  }
+  @media (min-width: 768px) {
+    &:focus {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    &:hover {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 

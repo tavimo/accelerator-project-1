@@ -1,3 +1,7 @@
+.about {
+  min-width: 320px;
+}
+
 .about__container {
   padding-bottom: 40px;
 
@@ -182,7 +186,7 @@
   top: 50%;
   right: 50%;
   transform: translateX(50%) translateY(-50%);
-  background: linear-gradient(128deg, #ed0233 0%, #003eb7 100%);
+  background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
   outline: 2px solid rgba(237, 2, 51, 0.2);
   outline-offset: 8px;
 

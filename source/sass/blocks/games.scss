@@ -1,3 +1,7 @@
+.games {
+  min-width: 320px;
+}
+
 .games__container {
   padding: 25px 15px;
 
@@ -80,6 +84,7 @@
 .games__data-text {
   grid-column: 1/3;
   position: relative;
+  padding-bottom: 2px;
 
   &::after {
     content: "";

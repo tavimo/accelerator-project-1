@@ -1,6 +1,7 @@
 .form {
   background-color: $color-text-basic;
   position: relative;
+  min-width: 320px;
 
   &::before {
     @media (min-width: 1366px) {
@@ -70,7 +71,7 @@
   width: 100%;
   border: none;
   background-color: transparent;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.5);
   padding-bottom: 6px;
   font-family: inherit;
