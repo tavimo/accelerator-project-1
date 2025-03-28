@@ -5,27 +5,26 @@
 .about__container {
   padding-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding-bottom: 120px;
     position: relative;
   }
 
-  @media (min-width: 1366px) {
-    padding-bottom: 0;
+  @media (width >= 1366px) {
     display: flex;
     column-gap: 145px;
-    padding: 120px 103px 240px 103px;
+    padding: 120px 103px 240px;
   }
 }
 
 .about__wrapper {
-  padding: 40px 15px 0 15px;
+  padding: 40px 15px 0;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding: 60px 45px 36px;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     width: 355px;
     padding: 0;
   }
@@ -42,14 +41,14 @@
   color: $color-text-basic;
   margin-bottom: 12px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     text-align: center;
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 20px;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     text-align: start;
     font-size: 54px;
     line-height: 54px;
@@ -68,14 +67,14 @@
   margin-bottom: 36px;
   display: block;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     text-align: center;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 36px;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     text-align: start;
     font-size: 22px;
     line-height: 22px;
@@ -90,7 +89,7 @@
   color: $color-text-basic;
   margin-bottom: 36px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     text-align: center;
     font-size: 16px;
     line-height: 24px;
@@ -98,7 +97,7 @@
     margin: 0 auto;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     text-align: start;
     font-size: 16px;
     line-height: 24px;
@@ -109,7 +108,7 @@
 .about__wrapper p:nth-of-type(2) {
   display: none;
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     display: block;
     margin-top: 8px;
   }
@@ -119,7 +118,7 @@
   display: block;
   margin-bottom: 36px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     margin: 0 auto;
   }
 }
@@ -127,39 +126,82 @@
 .about__iframe {
   width: 320px;
   height: 170px;
-  background-image: linear-gradient(#14367a80, #14367a80),
-    url(../../img/images/about-video-img-mobile@1x.jpg);
+  background-image: linear-gradient(
+      rgba($color: #14367a, $alpha: 0.5),
+      rgba($color: #14367a, $alpha: 0.5)
+    ),
+    image-set(
+      url("../../img/images/about-video-img-mobile@1x.webp") type("image/webp"),
+      url("../../img/images/about-video-img-mobile@1x.jpg") type("image/jpeg")
+    );
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: cover;
   position: relative;
 
-  @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(#14367a80, #14367a80),
-      url(../../img/images/about-video-img-mobile@2x.jpg);
+  @media (resolution >= 2dppx) {
+    background-image: linear-gradient(
+        rgba($color: #14367a, $alpha: 0.5),
+        rgba($color: #14367a, $alpha: 0.5)
+      ),
+      image-set(
+        url("../../img/images/about-video-img-mobile@2x.webp")
+          type("image/webp"),
+        url("../../img/images/about-video-img-mobile@2x.jpg") type("image/jpeg")
+      );
   }
 
-  @media (min-width: 768px) {
-    background-image: linear-gradient(#14367a80, #14367a80),
-      url(../../img/images/about-video-img-tablet@1x.jpg);
+  @media (width >= 768px) {
+    background-image: linear-gradient(
+        rgba($color: #14367a, $alpha: 0.5),
+        rgba($color: #14367a, $alpha: 0.5)
+      ),
+      image-set(
+        url("../../img/images/about-video-img-tablet@1x.webp")
+          type("image/webp"),
+        url("../../img/images/about-video-img-tablet@1x.jpg") type("image/jpeg")
+      );
   }
 
-  @media (min-width: 768px) and (min-resolution: 2dppx) {
-    background-image: linear-gradient(#14367a80, #14367a80),
-      url(../../img/images/about-video-img-tablet@2x.jpg);
+  @media (width >= 768px) and (resolution >= 2dppx) {
+    background-image: linear-gradient(
+        rgba($color: #14367a, $alpha: 0.5),
+        rgba($color: #14367a, $alpha: 0.5)
+      ),
+      image-set(
+        url("../../img/images/about-video-img-tablet@2x.webp")
+          type("image/webp"),
+        url("../../img/images/about-video-img-tablet@2x.jpg") type("image/jpeg")
+      );
   }
 
-  @media (min-width: 1366px) {
-    background-image: linear-gradient(#14367a80, #14367a80),
-      url(../../img/images/about-video-img-desktop@1x.jpg);
+  @media (width >= 1366px) {
+    background-image: linear-gradient(
+        rgba($color: #14367a, $alpha: 0.5),
+        rgba($color: #14367a, $alpha: 0.5)
+      ),
+      image-set(
+        url("../../img/images/about-video-img-desktop@1x.webp")
+          type("image/webp"),
+        url("../../img/images/about-video-img-desktop@1x.jpg")
+          type("image/jpeg")
+      );
   }
 
-  @media (min-width: 1366px) and (min-resolution: 2dppx) {
-    background-image: linear-gradient(#14367a80, #14367a80),
-      url(../../img/images/about-video-img-desktop@2x.jpg);
+  @media (width >= 1366px) and (resolution >= 2dppx) {
+    background-image: linear-gradient(
+        rgba($color: #14367a, $alpha: 0.5),
+        rgba($color: #14367a, $alpha: 0.5)
+      ),
+      image-set(
+        url("../../img/images/about-video-img-desktop@2x.webp")
+          type("image/webp"),
+        url("../../img/images/about-video-img-desktop@2x.jpg")
+          type("image/jpeg")
+      );
   }
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     position: absolute;
     width: 270px;
     height: 170px;
@@ -168,7 +210,7 @@
     transform: translateX(50%);
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     width: 360px;
     height: 230px;
     bottom: 125px;
@@ -190,7 +232,7 @@
   outline: 2px solid rgba(237, 2, 51, 0.2);
   outline-offset: 8px;
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     width: 72px;
     height: 72px;
     outline-offset: 12px;

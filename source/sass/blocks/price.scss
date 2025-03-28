@@ -8,7 +8,7 @@
   padding: 40px 15px 33px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding: 60px 30px 53px;
 
     &::after {
@@ -17,7 +17,7 @@
       width: 407px;
       height: 422px;
       position: absolute;
-      background-image: url(../../img/images/price-background-tablet@1x.png);
+      background-image: url("../../img/images/price-background-tablet@1x.png");
       background-repeat: no-repeat;
       background-size: 407px 422px;
       bottom: -35px;
@@ -25,19 +25,20 @@
       z-index: 0;
     }
   }
-  @media (min-width: 768px) and (min-resolution: 2dppx) {
+
+  @media (width >= 768px) and (resolution >= 2dppx) {
     &::after {
-      background-image: url(../../img/images/price-background-tablet@2x.png);
+      background-image: url("../../img/images/price-background-tablet@2x.png");
     }
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     padding: 100px 96px 93px;
 
     &::after {
       width: 470px;
       height: 468px;
-      background-image: url(../../img/images/price-background-desktop@1x.png);
+      background-image: url("../../img/images/price-background-desktop@1x.png");
       background-repeat: no-repeat;
       background-size: 470px 468px;
       bottom: -23px;
@@ -45,9 +46,10 @@
       z-index: 0;
     }
   }
-  @media (min-width: 1366px) and (min-resolution: 2dppx) {
+
+  @media (width >= 1366px) and (resolution >= 2dppx) {
     &::after {
-      background-image: url(../../img/images/price-background-desktop@2x.png);
+      background-image: url("../../img/images/price-background-desktop@2x.png");
     }
   }
 }
@@ -64,13 +66,13 @@
   text-align: center;
   margin-bottom: 30px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 35px;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     font-size: 54px;
     line-height: 54px;
     margin-bottom: 20px;
@@ -102,7 +104,7 @@
   flex-wrap: wrap;
   row-gap: 10px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     width: 310px;
     margin: 0 auto;
     font-size: 18px;
@@ -110,7 +112,7 @@
     margin-bottom: 38px;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 33px;
@@ -122,7 +124,7 @@
   opacity: 0.5;
   padding-bottom: 8px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding-bottom: 8px;
   }
 
@@ -131,6 +133,7 @@
     border-bottom: 2px solid $color-text-basic;
     margin-bottom: -2px;
   }
+
   &:focus {
     opacity: 1;
     border-bottom: 2px solid $color-text-basic;
@@ -147,11 +150,11 @@
   gap: 21px;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     gap: 26px;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: start;

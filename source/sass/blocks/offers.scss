@@ -4,13 +4,13 @@
 }
 
 .offers__container {
-  padding: 40px 0 0 0;
+  padding: 40px 0 0;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding: 60px 45px;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     padding: 100px 103px;
     display: grid;
     grid-template-columns: 560px 560px;
@@ -30,13 +30,13 @@
   color: $color-text-basic;
   margin-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 35px;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     font-size: 54px;
     line-height: 54px;
     margin-bottom: 70px;
@@ -45,7 +45,7 @@
 }
 
 .offers__hero {
-  padding: 0px;
+  padding: 0;
   background-color: $color-background-banner;
   position: relative;
 
@@ -58,7 +58,7 @@
     right: 315px;
     top: 0;
 
-    @media (min-width: 768px) {
+    @media (width >= 768px) {
       display: none;
     }
   }
@@ -72,16 +72,16 @@
     left: 315px;
     top: 0;
 
-    @media (min-width: 768px) {
+    @media (width >= 768px) {
       display: none;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     display: flex;
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     width: 560px;
     min-height: 460px;
     display: flex;
@@ -98,13 +98,13 @@
   overflow-wrap: break-word;
   white-space: normal;
 
-  @media (min-width: 768px) {
-    align-items: start;
+  @media (width >= 768px) {
     padding: 40px 25px;
     width: 278px;
     align-items: start;
   }
-  @media (min-width: 1366px) {
+
+  @media (width >= 1366px) {
     padding: 40px 45px;
   }
 }
@@ -120,7 +120,7 @@
   margin-bottom: 9px;
   max-width: 100%;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 20px;
@@ -138,7 +138,7 @@
   margin-bottom: 28px;
   max-width: 100%;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     font-size: 70px;
     line-height: 70px;
     margin-bottom: 40px;
@@ -155,7 +155,7 @@
   color: $color-text-light;
   margin-bottom: 18px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: auto;
@@ -182,7 +182,7 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     margin: 0;
   }
 
@@ -195,14 +195,16 @@
     padding: 10px;
     margin-bottom: -6px;
 
-    @media (min-width: 768px) {
+    @media (width >= 768px) {
       margin-left: -11px;
     }
   }
+
   &:active {
     color: $color-text-light;
     border-bottom: 1px solid $color-text-light;
   }
+
   &:disabled {
     opacity: 0.3;
   }
@@ -224,14 +226,15 @@
   align-items: center;
   gap: 30px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding: 0;
     padding-top: 35px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: start;
   }
-  @media (min-width: 1366px) {
+
+  @media (width >= 1366px) {
     flex-direction: column;
     margin-top: auto;
   }

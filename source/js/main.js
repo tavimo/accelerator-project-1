@@ -1,8 +1,4 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-
+/* global Swiper */
 //-----------------------------------------Абонементы цена
 document.addEventListener('DOMContentLoaded', () => {
   // Получаем все элементы вкладок и списков карт
@@ -46,15 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
-
 //------------------------------------------Жюри слайдер
-new Swiper(".juri__slider-wrapper", {
+new Swiper('.juri__slider-wrapper', {
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   slidesPerView: 1,
   spaceBetween: 40,
@@ -72,89 +65,102 @@ new Swiper(".juri__slider-wrapper", {
 });
 
 
-  //---------------------------------------Блок вопросы
+//---------------------------------------Блок вопросы
 
-  document.addEventListener('DOMContentLoaded', () => {
-    // Вкладки
-    const tabs = document.querySelectorAll('.faq__sorting-item');
-    const lists = document.querySelectorAll('.faq__list');
+document.addEventListener('DOMContentLoaded', () => {
+  // Вкладки
+  const tabs = document.querySelectorAll('.faq__sorting-item');
+  const lists = document.querySelectorAll('.faq__list');
 
-    // Сохранение состояния аккордеонов при смене вкладки
-    const accordionStates = {};
+  // Сохранение состояния аккордеонов при смене вкладки
+  const accordionStates = {};
 
-    // Функция для отображения активной вкладки
-    function setActiveTab(tab) {
-      tabs.forEach((tabItem) => tabItem.classList.remove('faq__sorting-item--current'));
-      lists.forEach((list) => {
-        list.style.display = 'none';
-      });
-
-      const activeTabElement = [...tabs].find((tabItem) => tabItem.querySelector('button').textContent.toLowerCase() === tab);
-      const activeList = document.querySelector(`.faq__list[data-tab="${tab}"]`);
-
-      if (activeTabElement) {
-        activeTabElement.classList.add('faq__sorting-item--current');
-      }
-      if (activeList) {
-        activeList.style.display = 'block';
-
-        // Восстановление состояния аккордеонов при переключении вкладки
-        const listItems = activeList.querySelectorAll('li');
-        listItems.forEach((item, index) => {
-          if (accordionStates[tab] && accordionStates[tab][index]) {
-            item.classList.add('faq__item--open');
-          }
-        });
-
-        // Открытие первого аккордеона по умолчанию в каждом табе
-        if (listItems.length > 0) {
-          listItems[0].classList.add('faq__item--open');
-          const tabName = activeList.getAttribute('data-tab');
-          if (!accordionStates[tabName]) {
-            accordionStates[tabName] = {};
-          }
-          accordionStates[tabName][0] = true;
-        }
-      }
-    }
-
-    // Инициализация первого таба
-    const firstTabName = tabs.length > 0 ? tabs[0].querySelector('button').textContent.toLowerCase() : null;
-    if (firstTabName) {
-      setActiveTab(firstTabName);
-    }
-
-    // Обработка клика по вкладке
-    tabs.forEach((tab) => {
-      tab.addEventListener('click', () => {
-        const tabName = tab.querySelector('button').textContent.toLowerCase();
-        setActiveTab(tabName);
-      });
-
-      // Поддержка навигации клавишами (ArrowLeft, ArrowRight, Enter)
-      tab.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter') {
-          const tabName = tab.querySelector('button').textContent.toLowerCase();
-          setActiveTab(tabName);
-        } else if (event.key === 'ArrowRight') {
-          let nextTab = tab.nextElementSibling || tabs[0]; // Переход к следующей вкладке
-          nextTab.querySelector('button').focus(); // Фокус на следующую вкладку
-        } else if (event.key === 'ArrowLeft') {
-          let prevTab = tab.previousElementSibling || tabs[tabs.length - 1]; // Переход к предыдущей вкладке
-          prevTab.querySelector('button').focus(); // Фокус на предыдущую вкладку
-        }
-      });
+  // Функция для отображения активной вкладки
+  function setActiveTab(tab) {
+    tabs.forEach((tabItem) => tabItem.classList.remove('faq__sorting-item--current'));
+    lists.forEach((list) => {
+      list.style.display = 'none';
     });
 
-    // Аккордеоны
-    const items = document.querySelectorAll('.faq__list li');
+    const activeTabElement = [...tabs].find((tabItem) => tabItem.querySelector('button').textContent.toLowerCase() === tab);
+    const activeList = document.querySelector(`.faq__list[data-tab="${tab}"]`);
 
-    items.forEach((item, index) => {
-      const toggleButton = item.querySelector('.faq__item-button');
-      const list = item.closest('.faq__list'); // Находим родительский список для хранения состояния
+    if (activeTabElement) {
+      activeTabElement.classList.add('faq__sorting-item--current');
+    }
+    if (activeList) {
+      activeList.style.display = 'block';
 
-      toggleButton.addEventListener('click', () => {
-        // Переключаем класс для открытия/закрытия аккордеона
+      // Восстановление состояния аккордеонов при переключении вкладки
+      const listItems = activeList.querySelectorAll('li');
+      listItems.forEach((item, index) => {
+        if (accordionStates[tab] && accordionStates[tab][index]) {
+          item.classList.add('faq__item--open');
+        }
+      });
+
+      // Открытие первого аккордеона по умолчанию в каждом табе
+      if (listItems.length > 0) {
+        listItems[0].classList.add('faq__item--open');
+        const tabName = activeList.getAttribute('data-tab');
+        if (!accordionStates[tabName]) {
+          accordionStates[tabName] = {};
+        }
+        accordionStates[tabName][0] = true;
+      }
+    }
+  }
+
+  // Инициализация первого таба
+  const firstTabName = tabs.length > 0 ? tabs[0].querySelector('button').textContent.toLowerCase() : null;
+  if (firstTabName) {
+    setActiveTab(firstTabName);
+  }
+
+  // Обработка клика по вкладке
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const tabName = tab.querySelector('button').textContent.toLowerCase();
+      setActiveTab(tabName);
+    });
+
+    // Поддержка навигации клавишами (ArrowLeft, ArrowRight, Enter)
+    tab.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        const tabName = tab.querySelector('button').textContent.toLowerCase();
+        setActiveTab(tabName);
+      } else if (event.key === 'ArrowRight') {
+        const nextTab = tab.nextElementSibling || tabs[0]; // Переход к следующей вкладке
+        nextTab.querySelector('button').focus(); // Фокус на следующую вкладку
+      } else if (event.key === 'ArrowLeft') {
+        const prevTab = tab.previousElementSibling || tabs[tabs.length - 1]; // Переход к предыдущей вкладке
+        prevTab.querySelector('button').focus(); // Фокус на предыдущую вкладку
+      }
+    });
+  });
+
+  // Аккордеоны
+  const items = document.querySelectorAll('.faq__list li');
+
+  items.forEach((item, index) => {
+    const toggleButton = item.querySelector('.faq__item-button');
+    const list = item.closest('.faq__list'); // Находим родительский список для хранения состояния
+
+    toggleButton.addEventListener('click', () => {
+      // Переключаем класс для открытия/закрытия аккордеона
+      item.classList.toggle('faq__item--open');
+
+      // Сохраняем состояние аккордеона для текущей вкладки
+      const tabName = list.getAttribute('data-tab');
+      if (!accordionStates[tabName]) {
+        accordionStates[tabName] = {};
+      }
+      accordionStates[tabName][index] = item.classList.contains('faq__item--open');
+    });
+
+    // Поддержка клавиши пробел для аккордеона
+    toggleButton.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
         item.classList.toggle('faq__item--open');
 
         // Сохраняем состояние аккордеона для текущей вкладки
@@ -163,76 +169,62 @@ new Swiper(".juri__slider-wrapper", {
           accordionStates[tabName] = {};
         }
         accordionStates[tabName][index] = item.classList.contains('faq__item--open');
-      });
+      }
+    });
 
-      // Поддержка клавиши пробел для аккордеона
-      toggleButton.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          item.classList.toggle('faq__item--open');
+    // Дополнительная поддержка пробела для переключения состояния аккордеона
+    toggleButton.addEventListener('keypress', (event) => {
+      if (event.key === ' ' || event.key === 'Enter') {
+        item.classList.toggle('faq__item--open');
 
-          // Сохраняем состояние аккордеона для текущей вкладки
-          const tabName = list.getAttribute('data-tab');
-          if (!accordionStates[tabName]) {
-            accordionStates[tabName] = {};
-          }
-          accordionStates[tabName][index] = item.classList.contains('faq__item--open');
-        }
-      });
-
-      // Дополнительная поддержка пробела для переключения состояния аккордеона
-      toggleButton.addEventListener('keypress', (event) => {
-        if (event.key === ' ' || event.key === 'Enter') {
-          item.classList.toggle('faq__item--open');
-
-          // Сохраняем состояние аккордеона для текущей вкладки
-          const tabName = list.getAttribute('data-tab');
-          if (!accordionStates[tabName]) {
-            accordionStates[tabName] = {};
-          }
-          accordionStates[tabName][index] = item.classList.contains('faq__item--open');
-        }
-      });
-
-      // Открытие первого аккордеона по умолчанию при загрузке вкладки
-      if (index === 0 && list.getAttribute('data-tab') === firstTabName) {
-        item.classList.add('faq__item--open');
+        // Сохраняем состояние аккордеона для текущей вкладки
         const tabName = list.getAttribute('data-tab');
         if (!accordionStates[tabName]) {
           accordionStates[tabName] = {};
         }
-        accordionStates[tabName][index] = true;
+        accordionStates[tabName][index] = item.classList.contains('faq__item--open');
       }
     });
 
+    // Открытие первого аккордеона по умолчанию при загрузке вкладки
+    if (index === 0 && list.getAttribute('data-tab') === firstTabName) {
+      item.classList.add('faq__item--open');
+      const tabName = list.getAttribute('data-tab');
+      if (!accordionStates[tabName]) {
+        accordionStates[tabName] = {};
+      }
+      accordionStates[tabName][index] = true;
+    }
   });
 
+});
 
 
 //------------------------------------- Запуск видео
 
-document.addEventListener("DOMContentLoaded", () => {
-  const videoContainer = document.querySelector(".about__iframe");
-  const playButton = videoContainer.querySelector(".about__iframe-button");
+document.addEventListener('DOMContentLoaded', () => {
+  const videoContainer = document.querySelector('.about__iframe');
+  const playButton = videoContainer.querySelector('.about__iframe-button');
 
-  playButton.addEventListener("click", () => {
-    const iframe = document.createElement("iframe");
-    iframe.setAttribute("width", "100%");
-    iframe.setAttribute("height", "100%");
-    iframe.setAttribute("src", "https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("allow", "autoplay; encrypted-media");
+  playButton.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.setAttribute('width', '100%');
+    iframe.setAttribute('height', '100%');
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allow', 'autoplay; encrypted-media');
 
-    videoContainer.style.background = "none";
-    videoContainer.innerHTML = "";
+    videoContainer.style.background = 'none';
+    videoContainer.innerHTML = '';
     videoContainer.appendChild(iframe);
   });
 });
 
 //------------------------------------------Отзывы слайдер
-new Swiper(".reviews__slider", {
+new Swiper('.reviews__slider', {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   slidesPerView: 1,
   allowTouchMove: true,
@@ -244,36 +236,4 @@ new Swiper(".reviews__slider", {
       allowTouchMove: false,
     },
   },
-});
-
-//________________________________________Форма
-document.querySelector('.form__data').addEventListener('submit', function(event) {
-  let isValid = true;
-  const nameInput = document.getElementById('name');
-  const phoneInput = document.getElementById('phone');
-
-  const nameError = document.getElementById('name-error');
-  const phoneError = document.getElementById('phone-error');
-
-  if (!nameInput.value.trim().match(/^[А-Яа-яЁёA-Za-z\s]+$/)) {
-      nameInput.classList.add('error');
-      nameError.style.display = 'block';
-      isValid = false;
-  } else {
-      nameInput.classList.remove('error');
-      nameError.style.display = 'none';
-  }
-
-  if (!phoneInput.value.trim().match(/^[0-9\-\+\s]+$/)) {
-      phoneInput.classList.add('error');
-      phoneError.style.display = 'block';
-      isValid = false;
-  } else {
-      phoneInput.classList.remove('error');
-      phoneError.style.display = 'none';
-  }
-
-  if (!isValid) {
-      event.preventDefault();
-  }
 });

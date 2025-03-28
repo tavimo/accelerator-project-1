@@ -49,14 +49,15 @@
     opacity: 1;
     visibility: visible;
   }
-  @media (min-width: 768px) {
+
+  @media (width >= 768px) {
     &:focus {
       opacity: 1;
       visibility: visible;
     }
   }
 
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     &:hover {
       opacity: 1;
       visibility: visible;

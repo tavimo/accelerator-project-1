@@ -1,14 +1,13 @@
 .button {
-    display: block;
-    text-decoration: none;
-    font-family: $basic-font;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 12px;
-    text-transform: uppercase;
-    color: $color-text-light;
-    padding: 22px;
-    text-align: center;
-    color: $color-text-basic;
-    border: 2px solid $color-text-basic;
+  display: block;
+  text-decoration: none;
+  font-family: $basic-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  padding: 22px;
+  text-align: center;
+  color: $color-text-basic;
+  border: 2px solid $color-text-basic;
 }
