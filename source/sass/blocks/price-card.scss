@@ -170,11 +170,12 @@
   }
 
   &:focus {
-    background: linear-gradient(
-      128deg,
-      rgba(#ed0233, $alpha: 0.8) 0%,
-      rgba(#003eb7, $alpha: 0.8) 100%
-    );
+    background:
+      linear-gradient(
+        128deg,
+        rgba(#ed0233, $alpha: 0.8) 0%,
+        rgba(#003eb7, $alpha: 0.8) 100%
+      );
     border: 2px solid #000000;
     color: $color-text-light;
   }
