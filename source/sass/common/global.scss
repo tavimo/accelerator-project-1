@@ -1,0 +1,29 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}

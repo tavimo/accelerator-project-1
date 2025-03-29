@@ -1,4 +1,31 @@
-// Vendor
-// ---------------------------------
+/* GLOBAL */
+@import "./common/variables";
+@import "./common/global";
+@import "./common/mixins";
+@import "./common/fonts";
+@import "./common/visually-hidden";
 
-@import "vendor/normalize";
+/* BLOCKS */
+@import "./blocks/container";
+@import "./blocks/button";
+@import "./blocks/hero";
+@import "./blocks/header";
+@import "./blocks/promo";
+@import "./blocks/about";
+@import "./blocks/price";
+@import "./blocks/price-card";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/juri-card";
+@import "./blocks/features";
+@import "./blocks/features-card";
+@import "./blocks/offers";
+@import "./blocks/offers-card";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/reviews-card";
+@import "./blocks/connection";
+@import "./blocks/form";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/social-list";

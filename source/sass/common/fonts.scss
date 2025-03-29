@@ -1,0 +1,35 @@
+@include font-face(
+  "RobotoCondensed",
+  300,
+  normal,
+  url("../../fonts/roboto-condensed-300.woff2") format("woff2"),
+  url("../../fonts/roboto-condensed-300.woff") format("woff")
+);
+@include font-face(
+  "RobotoCondensed",
+  400,
+  normal,
+  url("../../fonts/roboto-condensed-400.woff2") format("woff2"),
+  url("../../fonts/roboto-condensed-400.woff") format("woff")
+);
+@include font-face(
+  "RobotoCondensed",
+  700,
+  normal,
+  url("../../fonts/roboto-condensed-700.woff2") format("woff2"),
+  url("../../fonts/roboto-condensed-700.woff") format("woff")
+);
+@include font-face(
+  "AlumniSans",
+  600,
+  normal,
+  url("../../fonts/alumni-sans-600.woff2") format("woff2"),
+  url("../../fonts/alumni-sans-600.woff") format("woff")
+);
+@include font-face(
+  "AlumniSans",
+  800,
+  normal,
+  url("../../fonts/alumni-sans-800.woff2") format("woff2"),
+  url("../../fonts/alumni-sans-800.woff") format("woff")
+);
